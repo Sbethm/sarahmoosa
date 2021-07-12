@@ -1,1 +1,244 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  line-height: 1;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+nav ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+input, select {
+  vertical-align: middle;
+}
+
+/* Table of Contents
+    1. Fonts
+        1.1 Font Family
+        1.2 Font Size
+        1.2 Font Weight
+    2. Colors
+    3. Transitions
+*/
+/* Table of Contents
+    1. Overall Styling (mobile, etc.)
+        1.1 Header
+        1.2 Welcome
+        1.3 Projects
+        1.4 Skills
+        1.5 About
+        1.6 Contact
+        1.7 Footer
+    2. Tablet Styling
+        2.1 Header
+        2.2 Welcome
+        2.3 Projects
+        2.4 Skills
+        2.5 About
+        2.6 Contact
+        2.7 Footer
+    3. Computer Styling
+        3.1 Header
+        3.2 Welcome
+        3.3 Projects
+        3.4 Skills
+        3.5 About
+        3.6 Contact
+        3.7 Footer
+*/
+body {
+  background-size: 40px 40px;
+  background-image: linear-gradient(to right, grey 1px, transparent 1px), linear-gradient(to bottom, grey 1px, transparent 1px);
+}
+
+section {
+  width: calc(100vw - 60px);
+  margin: 20px;
+  padding: 10px;
+  background-color: #f1f1f1;
+  -webkit-box-shadow: 2px 2px 10px 1px #424242;
+          box-shadow: 2px 2px 10px 1px #424242;
+}
+
+h2 {
+  font-family: "Patrick Hand", cursive;
+  font-size: 1.5rem;
+  color: #f0466b;
+}
+
+p {
+  font-family: "Overpass", sans-serif;
+}
+
+header {
+  height: 5rem;
+  width: 100vw;
+  display: block;
+  position: fixed;
+  top: 0;
+  background-color: #f1f1f1;
+  border-bottom: 0.5px solid #0a0644;
+  -webkit-box-shadow: 2px 2px 10px 1px #424242;
+          box-shadow: 2px 2px 10px 1px #424242;
+  overflow: hidden;
+  z-index: 9;
+}
+
+header h1 {
+  font-family: "Patrick Hand", cursive;
+  font-size: 2.5rem;
+  padding: 1.25rem;
+}
+
+header .hamburger {
+  position: absolute;
+  top: 2em;
+  right: 2em;
+  z-index: 1;
+  width: 28px;
+}
+
+header .hamburger .patty {
+  position: absolute;
+  top: 0.5rem;
+  right: 0;
+  height: 3px;
+  width: 28px;
+  background: #000;
+}
+
+header .hamburger .patty::before {
+  content: '';
+  position: absolute;
+  top: -8px;
+  height: 3px;
+  width: 28px;
+  background: #000;
+}
+
+header .hamburger .patty::after {
+  content: '';
+  position: absolute;
+  top: 8px;
+  height: 3px;
+  width: 20px;
+  background: #000;
+}
+
+header .hamburger .patty.open {
+  -webkit-transform: rotate(720deg);
+          transform: rotate(720deg);
+  background: transparent;
+}
+
+header .hamburger .patty.open::before {
+  -webkit-transform: rotate(45deg) translate(5px, 8px);
+          transform: rotate(45deg) translate(5px, 8px);
+}
+
+header .hamburger .patty.open::after {
+  width: 28px;
+  -webkit-transform: rotate(-45deg) translate(3px, -7px);
+          transform: rotate(-45deg) translate(3px, -7px);
+}
+
+.welcome {
+  font-family: "Overpass", sans-serif;
+  font-size: 2.75rem;
+  position: absolute;
+  top: 7.6rem;
+  left: 3.75rem;
+}
+
+.project--sect {
+  margin-top: 16rem;
+}
+/*# sourceMappingURL=style.css.map */
