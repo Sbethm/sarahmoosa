@@ -1,0 +1,780 @@
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  line-height: 1;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+nav ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+input, select {
+  vertical-align: middle;
+}
+
+.main--quiz {
+  margin: 0px 15px;
+  height: calc(100vh - 200px);
+  width: calc(100vw - 30px);
+  background: rgba(44, 43, 44, 0.63);
+  overflow: scroll;
+}
+
+.slide {
+  width: 100%;
+  display: none;
+  z-index: 1;
+  opacity: 0;
+}
+
+.active-slide {
+  opacity: 1;
+  z-index: 2;
+  display: contents;
+}
+
+#quiz {
+  padding: 20px 10px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+#quiz .question {
+  font-family: "Niramit", sans-serif;
+  color: rgba(44, 43, 44, 0.781);
+  font-size: 1.8rem;
+  line-height: 2rem;
+  text-indent: 25px;
+  background: #f1f1f1;
+  padding: 20px;
+  border: 1px solid #f1f1f1;
+  border-radius: 15px 15px 0 0;
+}
+
+#quiz .answers {
+  border: 1px solid #f1f1f1;
+}
+
+#quiz .answers label {
+  display: inline-block;
+  margin: 20px;
+  font-family: "Niramit", sans-serif;
+  font-size: 1.5rem;
+  color: #16dde4;
+  cursor: pointer;
+}
+
+button {
+  display: inline-block;
+  font-family: "Niramit", sans-serif;
+  font-size: 1.8rem;
+  color: rgba(44, 43, 44, 0.781);
+  background: #f1f1f1;
+  padding: 10px;
+  margin: 10px 0px 0px 20px;
+  font-weight: 700;
+  text-align: center;
+  border: 1px solid #f1f1f1;
+  border-radius: 15px;
+  -webkit-box-shadow: -2px 2px 10px, -12px 12px #16dde4;
+          box-shadow: -2px 2px 10px, -12px 12px #16dde4;
+  z-index: 2;
+}
+
+button:hover {
+  background: #929090;
+  color: #f1f1f1;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+#results {
+  font-family: "Niramit", sans-serif;
+  color: #f1f1f1;
+  font-size: 1.8rem;
+  line-height: 2rem;
+  text-indent: 25px;
+  padding: 20px 10px;
+}
+
+#results span {
+  color: #fbff00;
+  font-weight: 600;
+}
+
+@media only screen and (min-width: 600px) {
+  .main--quiz {
+    margin: 0px 15px;
+    height: calc(100vh - 200px);
+    width: calc(100vw - 30px);
+    background: rgba(44, 43, 44, 0.63);
+    overflow: scroll;
+  }
+  .slide {
+    width: 100%;
+    display: none;
+    z-index: 1;
+    opacity: 0;
+  }
+  .active-slide {
+    opacity: 1;
+    z-index: 2;
+    display: contents;
+  }
+  #quiz {
+    padding: 120px 40px 50px 40px;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  #quiz .question {
+    font-family: "Niramit", sans-serif;
+    color: rgba(44, 43, 44, 0.781);
+    font-size: 2.5rem;
+    line-height: 3rem;
+    text-indent: 25px;
+    background: #f1f1f1;
+    padding: 20px;
+    border: 1px solid #f1f1f1;
+    border-radius: 15px 15px 0 0;
+  }
+  #quiz .answers {
+    border: 1px solid #f1f1f1;
+  }
+  #quiz .answers label {
+    display: inline-block;
+    margin: 20px;
+    font-family: "Niramit", sans-serif;
+    font-size: 2rem;
+    color: #16dde4;
+    cursor: pointer;
+  }
+  #quiz .answers label input[type="radio"]:checked {
+    color: salmon;
+  }
+  button {
+    display: inline-block;
+    font-family: "Niramit", sans-serif;
+    font-size: 2rem;
+    color: rgba(44, 43, 44, 0.781);
+    background: #f1f1f1;
+    padding: 15px;
+    margin: 15px 0px 30px 40px;
+    font-weight: 700;
+    text-align: center;
+    border: 1px solid #f1f1f1;
+    border-radius: 15px;
+    -webkit-box-shadow: -2px 2px 10px, -12px 12px #16dde4;
+            box-shadow: -2px 2px 10px, -12px 12px #16dde4;
+    z-index: 2;
+  }
+  button:hover {
+    background: #929090;
+    color: #f1f1f1;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+  }
+  #results {
+    font-family: "Niramit", sans-serif;
+    color: #f1f1f1;
+    font-size: 2rem;
+    line-height: 2.8rem;
+    text-indent: 25px;
+    padding: 120px 40px 50px 40px;
+  }
+  #results span {
+    color: #fbff00;
+    font-weight: 600;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #f1f1f1;
+  font-size: 30px;
+}
+
+h2 {
+  scroll-margin-top: 100px;
+  position: relative;
+  padding: 30px 15px;
+  font-family: "KoHo", sans-serif;
+  font-size: 2.5rem;
+  line-height: 2.7rem;
+  text-align: center;
+  color: #fbff00;
+}
+
+h2::after {
+  content: '';
+  z-index: -1;
+  position: absolute;
+  top: -2px;
+  left: 15px;
+  height: 5000px;
+  width: calc(100vw - 30px);
+  background-color: rgba(44, 43, 44, 0.397);
+}
+
+a {
+  text-decoration: none;
+  color: #f1f1f1;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.square {
+  height: 180px;
+  width: 241px;
+  overflow: hidden;
+  -webkit-box-shadow: 2px 2px 10px, 12px 12px #16dde4;
+          box-shadow: 2px 2px 10px, 12px 12px #16dde4;
+}
+
+.square img {
+  height: 180px;
+  width: auto;
+}
+
+p {
+  margin: 20px 30px 0 30px;
+  font-family: "Niramit", sans-serif;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  text-indent: 25px;
+  color: #f1f1f1;
+  border-bottom: 4px solid #16dde4;
+  padding-bottom: 30px;
+}
+
+p span {
+  color: #fbff00;
+  font-weight: 600;
+}
+
+header {
+  height: 100px;
+  width: 100vw;
+  z-index: 999;
+  position: fixed;
+  top: 0;
+  background: #f06b28;
+  -webkit-box-shadow: 1px 1px 5px;
+          box-shadow: 1px 1px 5px;
+  overflow: hidden;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+header h1 {
+  width: 50vw;
+  position: relative;
+  padding: 0.8em;
+  z-index: 9;
+  font-family: "KoHo", sans-serif;
+  font-size: 2.5rem;
+  color: #f1f1f1;
+}
+
+header .btn--hamburger {
+  height: 3px;
+  width: 28px;
+  position: absolute;
+  top: 48px;
+  right: 1.5em;
+  z-index: 9;
+  background: #f1f1f1;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+header .btn--hamburger::before {
+  content: '';
+  height: 3px;
+  width: 28px;
+  position: absolute;
+  top: -8px;
+  z-index: 9;
+  background: #f1f1f1;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+header .btn--hamburger::after {
+  content: '';
+  height: 3px;
+  width: 20px;
+  position: absolute;
+  top: 8px;
+  z-index: 9;
+  background: #f1f1f1;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+header .btn--hamburger.open {
+  background: transparent;
+}
+
+header .btn--hamburger.open::before {
+  -webkit-transform: rotate(-50deg) translateX(-10px) translateY(10px);
+          transform: rotate(-50deg) translateX(-10px) translateY(10px);
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+header .btn--hamburger.open::after {
+  width: 28px;
+  -webkit-transform: rotate(50deg) translateY(-10px) translateY(8px);
+          transform: rotate(50deg) translateY(-10px) translateY(8px);
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+header.height {
+  height: 454px;
+  background: #f06b28;
+  opacity: 0.9;
+}
+
+header .ul--nav {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 100vw;
+      grid-template-columns: 100vw;
+  -ms-grid-rows: 75px 75px 75px 75px;
+      grid-template-rows: 75px 75px 75px 75px;
+  place-items: center;
+}
+
+header .ul--nav li {
+  font-family: "KoHo", sans-serif;
+  color: #f1f1f1;
+}
+
+header .ul--nav li a {
+  padding: 25px;
+}
+
+main {
+  padding-top: 100px;
+  overflow: clip;
+  scroll-behavior: smooth;
+}
+
+.about--title {
+  height: 150px;
+}
+
+.about--title::before {
+  content: '';
+  z-index: -2;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 200px;
+  width: 100vw;
+  background-image: url(../img/art-school-of-athens-1143741_1920.jpg);
+  background-size: 150%;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+}
+
+.about--title::after {
+  top: -500px;
+}
+
+.about--info p {
+  margin: 0 30px;
+  font-family: "Niramit", sans-serif;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  text-indent: 25px;
+  color: #f1f1f1;
+  border-bottom: 4px solid #16dde4;
+  padding-bottom: 30px;
+}
+
+.pre--img img {
+  position: relative;
+  height: 250px;
+  width: auto;
+  right: 100px;
+  bottom: 40px;
+}
+
+.s--img {
+  margin-left: 100%;
+  margin-bottom: 40px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  float: right;
+  -webkit-box-shadow: -2px 2px 10px, -12px 12px #16dde4;
+          box-shadow: -2px 2px 10px, -12px 12px #16dde4;
+}
+
+.link--area {
+  height: 250px;
+  width: 100vw;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+.link--area a {
+  height: 40px;
+  width: 200px;
+  padding: 25px 15px 20px 20px;
+  font-family: "KoHo", sans-serif;
+  font-size: 1.9rem;
+  line-height: 1.9rem;
+  font-weight: 700;
+  text-align: center;
+  color: rgba(44, 43, 44, 0.781);
+  background: #f1f1f1;
+  border: 1px solid #f1f1f1;
+  border-radius: 15px;
+  -webkit-box-shadow: -2px 2px 10px, -12px 12px #16dde4;
+          box-shadow: -2px 2px 10px, -12px 12px #16dde4;
+  cursor: pointer;
+}
+
+footer {
+  height: 100px;
+  width: 100vw;
+  z-index: 999;
+  position: relative;
+  bottom: 0;
+  background: #f06b28;
+}
+
+@media only screen and (min-width: 600px) {
+  h2 {
+    scroll-margin-top: 100px;
+    position: relative;
+    padding: 30px 15px;
+    font-family: "KoHo", sans-serif;
+    font-size: 2.8rem;
+    line-height: 3rem;
+    text-align: center;
+    color: #fbff00;
+  }
+  h2::after {
+    content: '';
+    z-index: -1;
+    position: absolute;
+    top: -2px;
+    left: 15px;
+    height: 5000px;
+    width: calc(100vw - 30px);
+    background-color: rgba(44, 43, 44, 0.397);
+  }
+  a {
+    text-decoration: none;
+    color: #f1f1f1;
+  }
+  ul {
+    list-style-type: none;
+  }
+  .square {
+    height: 360px;
+    width: 482px;
+    overflow: hidden;
+    -webkit-box-shadow: 2px 2px 10px, 12px 12px #16dde4;
+            box-shadow: 2px 2px 10px, 12px 12px #16dde4;
+  }
+  .square img {
+    height: 360px;
+    width: auto;
+  }
+  p {
+    margin: 40px 60px 0 60px;
+    font-family: "Niramit", sans-serif;
+    font-size: 2rem;
+    line-height: 2.8rem;
+    text-indent: 30px;
+    color: #f1f1f1;
+    border-bottom: 4px solid #16dde4;
+    padding-bottom: 30px;
+  }
+  p span {
+    color: #fbff00;
+    font-weight: 600;
+  }
+  header {
+    height: 100px;
+    width: 100vw;
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    background: #f06b28;
+    -webkit-box-shadow: 1px 1px 5px;
+            box-shadow: 1px 1px 5px;
+    overflow: hidden;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+  }
+  header h1 {
+    width: 50vw;
+    position: relative;
+    padding: 0.8em;
+    z-index: 9;
+    font-family: "KoHo", sans-serif;
+    font-size: 2.5rem;
+    color: #f1f1f1;
+  }
+  header .btn--hamburger {
+    height: 3px;
+    width: 28px;
+    position: absolute;
+    top: 48px;
+    right: 1.5em;
+    z-index: 9;
+    background: #f1f1f1;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+  }
+  header .btn--hamburger::before {
+    content: '';
+    height: 3px;
+    width: 28px;
+    position: absolute;
+    top: -8px;
+    z-index: 9;
+    background: #f1f1f1;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+  }
+  header .btn--hamburger::after {
+    content: '';
+    height: 3px;
+    width: 20px;
+    position: absolute;
+    top: 8px;
+    z-index: 9;
+    background: #f1f1f1;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+  }
+  header .btn--hamburger.open {
+    background: transparent;
+  }
+  header .btn--hamburger.open::before {
+    -webkit-transform: rotate(-50deg) translateX(-10px) translateY(10px);
+            transform: rotate(-50deg) translateX(-10px) translateY(10px);
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+  }
+  header .btn--hamburger.open::after {
+    width: 28px;
+    -webkit-transform: rotate(50deg) translateY(-10px) translateY(8px);
+            transform: rotate(50deg) translateY(-10px) translateY(8px);
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+  }
+  header.height {
+    height: 454px;
+    background: #f06b28;
+    opacity: 0.9;
+  }
+  header .ul--nav {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 100vw;
+        grid-template-columns: 100vw;
+    -ms-grid-rows: 75px 75px 75px 75px;
+        grid-template-rows: 75px 75px 75px 75px;
+    place-items: center;
+  }
+  header .ul--nav li {
+    font-family: "KoHo", sans-serif;
+    color: #f1f1f1;
+  }
+  header .ul--nav li a {
+    padding: 25px;
+  }
+  main {
+    padding-top: 100px;
+    overflow: clip;
+    scroll-behavior: smooth;
+  }
+  .about--title {
+    padding-top: 200px;
+    height: 200px;
+  }
+  .about--title::before {
+    content: '';
+    z-index: -2;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 425px;
+    width: 100vw;
+    background-image: url(../img/art-school-of-athens-1143741_1920.jpg);
+    background-size: 150%;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    -webkit-filter: grayscale(100%);
+            filter: grayscale(100%);
+  }
+  .about--title::after {
+    top: -500px;
+  }
+  .about--info p {
+    margin: 0 30px;
+    padding: 30px;
+    font-family: "Niramit", sans-serif;
+    font-size: 2rem;
+    line-height: 2.8rem;
+    text-indent: 30px;
+    color: #f1f1f1;
+    border-bottom: 4px solid #16dde4;
+  }
+  .pre--img img {
+    position: relative;
+    height: 500px;
+    width: auto;
+    right: 100px;
+    bottom: 40px;
+  }
+  .s--img {
+    margin-left: 100%;
+    margin-bottom: 40px;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    float: right;
+    -webkit-box-shadow: -2px 2px 10px, -12px 12px #16dde4;
+            box-shadow: -2px 2px 10px, -12px 12px #16dde4;
+  }
+  .link--area {
+    height: 250px;
+    width: 100vw;
+    display: -ms-grid;
+    display: grid;
+    place-items: center;
+  }
+  .link--area a {
+    height: 40px;
+    width: 200px;
+    padding: 25px 15px 20px 20px;
+    font-family: "KoHo", sans-serif;
+    font-size: 1.9rem;
+    line-height: 1.9rem;
+    font-weight: 700;
+    text-align: center;
+    color: rgba(44, 43, 44, 0.781);
+    background: #f1f1f1;
+    border: 1px solid #f1f1f1;
+    border-radius: 15px;
+    -webkit-box-shadow: -2px 2px 10px, -12px 12px #16dde4;
+            box-shadow: -2px 2px 10px, -12px 12px #16dde4;
+    cursor: pointer;
+  }
+  footer {
+    height: 100px;
+    width: 100vw;
+    z-index: 999;
+    position: relative;
+    bottom: 0;
+    background: #f06b28;
+  }
+}
+/*# sourceMappingURL=style.css.map */

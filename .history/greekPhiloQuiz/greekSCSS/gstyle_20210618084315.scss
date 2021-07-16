@@ -1,0 +1,649 @@
+@import "./resets", "./variables", "./mixins", "./quiz", "./hamburger";
+
+//GENERAL STYLES
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: colors(background);
+    font-size: 30px;
+}
+
+h2 {
+    scroll-margin-top: 100px;
+    position: relative;
+    padding: 30px 15px;
+    font-family: $headerFont;
+    font-size: 2.5rem;
+    line-height: 2.7rem;
+    text-align: center;
+    color: colors(accent--yellow);
+
+    &::after {
+        content:'';
+        z-index: -1;
+        position: absolute;
+        top: -2px; left: 15px;
+        height: 5000px;
+        width: calc(100vw - 30px);
+        background-color: rgba(44, 43, 44, 0.397);
+    }
+}
+
+a {
+    text-decoration: none;
+    color: colors(header);
+}
+
+ul { 
+    list-style-type: none;
+}
+
+.square {
+    height: 180px;
+    width: 241px;
+    overflow: hidden;
+    box-shadow: 2px 2px 10px colors(text--camo), 12px 12px colors(accent--blue);
+
+    & img {
+        height: 180px;
+        width: auto;
+    }
+}
+
+p {
+    margin: 20px 30px 0 30px;
+    font-family: $paraFont;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    text-indent: 25px;
+    color: colors(header);
+    border-bottom: 4px solid colors(accent--blue);
+    padding-bottom: 30px;
+
+    & span {
+        color: colors(accent--yellow);
+        font-weight: 600;
+    }  
+}
+
+//HEADER
+header {
+    height: 100px;
+    width: 100vw;
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    background: colors(box--orange);
+    box-shadow: 1px 1px 5px colors(text--camo);
+    overflow: hidden;
+        @include transition-ease;
+    
+        & h1 {
+            width: 50vw;
+            position: relative;
+            padding: 0.8em;
+            z-index: 9;
+            font-family: $headerFont;
+            font-size: 2.5rem; 
+            color: colors(header);
+        }
+    
+        //NAVIGATION
+        & .btn--hamburger {
+            height: 3px;
+            width: 28px;
+            position: absolute;
+            top: 48px;
+            right: 1em;
+            z-index: 9;
+            background: colors(header);
+            @include transition-ease;
+    
+            &::before {
+                content: '';
+                height: 3px;
+                width: 28px;
+                position: absolute;
+                top: -8px;
+                z-index: 9;
+                background: colors(header);
+                @include transition-ease;
+            }
+    
+            &::after {
+                content: '';
+                height: 3px;
+                width: 20px;
+                position: absolute;
+                top: 8px;
+                z-index: 9;
+                background: colors(header);
+                @include transition-ease;
+            }
+    
+            &.open {
+                background: transparent;
+    
+                &::before {
+                    transform: rotate(-50deg) translateX(-10px) translateY(10px);
+                    @include transition-ease;
+                }
+                
+                &::after {
+                    width: 28px;
+                    transform: rotate(50deg) translateY(-10px) translateY(8px);
+                    @include transition-ease;
+                }
+            }
+        }
+        &.height {
+            height: 454px;
+            background: colors(box--orange);
+            opacity: 0.9;
+        }
+    
+        .ul--nav {
+            display: grid;
+            grid-template-columns: 100vw;
+            grid-template-rows: 75px 75px 75px 75px;
+            place-items: center;
+    
+            & li {
+                font-family: $headerFont;
+                color: colors(header);
+    
+                & a {
+                    padding: 25px;
+                }
+            }
+        }    
+    }
+
+//MAIN
+main {
+    padding-top: 100px;
+    overflow: clip;
+    scroll-behavior: smooth;
+}
+
+//ABOUT SECTION
+.about--title {
+    display: flex;
+    height: 200px;
+    width: calc(100vw - 30px);
+    padding: 0 15px;
+    justify-items: center;
+    align-items: center;
+
+    &::before {
+        content: '';
+        z-index: -2;
+        position: absolute;
+        top: 100px; left: 0;
+        height: 200px;
+        width: 100vw;
+        background-image: url(../img/art-school-of-athens-1143741_1920.jpg);
+        background-size: 150%;
+        background-position: bottom;
+        background-repeat: no-repeat;
+        filter: grayscale(100%);
+    }
+}
+
+#main--about__title {
+    width: calc(100vw - 30px);
+}
+
+#main--about__title::after {
+        top: -500px;//Top is different here in order the stretch the ::after element above and behind the header 
+        left: 0px;   
+    }
+
+//PYTHAGORAS SECTION  
+.pre--img {
+
+    & img {
+        position: relative;
+        height: 250px;
+        width: auto;
+        right: 100px;
+        bottom: 40px;
+    }
+}
+
+//SOCRATES SECTION      
+.s--img {
+    margin-left: 100%;
+    margin-bottom: 40px;
+    display: inline-flex;
+    float: right;
+    box-shadow: -2px 2px 10px colors(text--camo), -12px 12px colors(accent--blue);
+    
+}
+    
+//ARISTOTLE SECTION 
+
+
+//BUTTON FOR QUIZ!
+.link--area {
+    height: 250px;
+    width: 100vw;
+    display: grid;
+    place-items: center;
+
+    & a {
+        padding: 20px;
+        font-family: $headerFont;
+        font-size: 1.9rem;
+        line-height: 1.9rem;
+        font-weight: 700;
+        color: rgba(44, 43, 44, 0.781);
+        background: colors(header);
+        border: 1px solid colors(header);
+        border-radius: 15px;
+        box-shadow: -2px 2px 10px colors(text--camo), -12px 12px colors(accent--blue);
+        cursor: pointer;
+    }
+}
+
+//FOOTER
+footer { 
+    height: 100px;
+    width: 100vw;
+    z-index: 1;
+    position: relative;
+    bottom: 0;
+    background: colors(box--orange);
+}
+
+//TABLET STYLING LANDSCAPE
+@media only screen and (min-device-width : 768px) and (max-device-width : 1366px) and (orientation : landscape) {
+    /* Styles */
+    h2 {
+        scroll-margin-top: 150px;
+        font-size: 3rem;
+    }
+
+    .square {
+        height: 360px;
+        width: 482px;
+        box-shadow: 2px 2px 10px colors(text--camo), 15px 15px colors(accent--blue);
+    
+        & img {
+            height: 360px;
+        }
+    }
+    
+    p {
+        margin: 40px 60px 0 60px;
+        font-size: 2rem;
+        line-height: 2.8rem;
+        text-indent: 30px;
+    }
+    
+    //HEADER
+    header {
+    
+        //NAVIGATION
+        & .btn--hamburger {
+            width: 40px;
+            top: 50px;
+            right: 45px;
+    
+            &::before {
+                width: 40px;
+                top: -10px;
+            }
+    
+            &::after {
+                width: 30px;
+                top: 10px;
+            }
+    
+            &.open {
+                
+                &::after {
+                    width: 40px;
+                    transform: rotate(50deg) translateX(-6px) translateY(-7px);
+                }
+            }
+        }
+        &.height {
+            height: 800px;
+        }
+    
+        .ul--nav {
+            grid-template-rows: 130px 130px 130px 130px 130px;
+    
+            & li {
+                font-size: 3rem;
+    
+                & a {
+                    padding: 25px;
+                }
+            }
+        }    
+    }
+    //MAIN
+    main {
+        padding-top: 150px;
+    }
+    
+    //ABOUT SECTION
+    .about--title {
+        height: 425px;
+    
+        &::before {
+            top: 100px; left: 0;
+            height: 475px;
+            background-size: 100%;
+        }
+    }
+
+    #main--about__title::after {
+        top: -500px;//Top is different here in order the stretch the ::after element above and behind the header  
+    }
+    
+    //PYTHAGORAS SECTION  
+    .pre--img {
+    
+        & img {
+            height: 500px;
+        }
+    }
+    
+    //SOCRATES SECTION      
+    .s--img {
+        box-shadow: -2px 2px 10px colors(text--camo), -15px 15px colors(accent--blue);    
+    }
+        
+    //ARISTOTLE SECTION 
+    
+    //BUTTON FOR QUIZ!
+    .link--area {
+
+        & a {
+            font-size: 2.5rem;
+            box-shadow: -2px 2px 10px colors(text--camo), -15px 15px colors(accent--blue);
+        }
+    }
+    
+    //FOOTER
+    footer { 
+        height: 100px;
+    }
+}
+
+//TABLET STYLE PORTRAIT
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+    /*Style*/
+    h2 {
+        scroll-margin-top: 150px;
+        font-size: 3rem;
+    }
+
+    .square {
+        height: 360px;
+        width: 482px;
+        box-shadow: 2px 2px 10px colors(text--camo), 15px 15px colors(accent--blue);
+    
+        & img {
+            height: 360px;
+        }
+    }
+    
+    p {
+        margin: 40px 60px 0 60px;
+        font-size: 2rem;
+        line-height: 2.8rem;
+        text-indent: 30px;
+    }
+    
+    //HEADER
+    header {
+    
+        //NAVIGATION
+        & .btn--hamburger {
+            width: 40px;
+            top: 50px;
+            right: 45px;
+    
+            &::before {
+                width: 40px;
+                top: -10px;
+            }
+    
+            &::after {
+                width: 30px;
+                top: 10px;
+            }
+    
+            &.open {
+                
+                &::after {
+                    width: 40px;
+                    transform: rotate(50deg) translateX(-6px) translateY(-7px);
+                }
+            }
+        }
+        &.height {
+            height: 800px;
+        }
+    
+        .ul--nav {
+            grid-template-rows: 130px 130px 130px 130px 130px;
+    
+            & li {
+                font-size: 3rem;
+    
+                & a {
+                    padding: 25px;
+                }
+            }
+        }    
+    }
+    //MAIN
+    main {
+        padding-top: 150px;
+    }
+    
+    //ABOUT SECTION
+    .about--title {
+        height: 425px;
+    
+        &::before {
+            top: 100px; left: 0;
+            height: 475px;
+            background-size: 100%;
+        }
+    }
+
+    #main--about__title::after {
+        top: -500px;//Top is different here in order the stretch the ::after element above and behind the header  
+    }
+    
+    //PYTHAGORAS SECTION  
+    .pre--img {
+    
+        & img {
+            height: 500px;
+        }
+    }
+    
+    //SOCRATES SECTION      
+    .s--img {
+        box-shadow: -2px 2px 10px colors(text--camo), -15px 15px colors(accent--blue);    
+    }
+        
+    //ARISTOTLE SECTION 
+    
+    //BUTTON FOR QUIZ!
+    .link--area {
+
+        & a {
+            font-size: 2.5rem;
+            box-shadow: -2px 2px 10px colors(text--camo), -15px 15px colors(accent--blue);
+        }
+    }
+    
+    //FOOTER
+    footer { 
+        height: 100px;
+    }
+}
+
+//DESKTOP AND LAPTOP STYLE
+@media only screen  and (min-width : 1224px) {
+    /*Style*/
+    header {
+    
+        //NAVIGATION
+        & .btn--hamburger {
+
+            &.open {
+                
+                &::after {
+                    transform: rotate(50deg) translateX(-3px) translateY(-5px);
+                }
+            }
+        }
+        &.height {
+            height: 600px;
+        }
+    
+        .ul--nav {
+            grid-template-rows: 100px 100px 100px 100px 100px;
+    
+            & li {
+                font-size: 2.5rem;
+    
+                & a {
+                    padding: 20px;
+                }
+            }
+        }    
+    }
+
+    h2 {
+
+        &::after {
+            top: -2px; left: 0px;
+            width: calc(100vw - 130px);
+        }
+    }
+
+    p {
+        border-bottom: none;
+        margin-top: 0px;
+    }
+
+    .main--p,
+    .main--s,
+    .main--a {
+        width: calc(100vw - 100px);
+        padding-bottom: 40px;
+        margin: 0 50px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 120px auto;
+
+        & p {
+            text-align: center;
+            border-bottom: none;
+        }
+    }
+
+    //ABOUT
+    .about--title {
+        width: calc(100vw - 100px);
+        padding: 0 50px;
+    }    
+
+    #main--about__title::after {
+        top: -500px;//Top is different here in order the stretch the ::after element above and behind the header 
+        left: 15px;   
+    }
+
+    .about--info {
+        padding: 30px 20px;
+        text-align: center;
+    }
+
+    //PYTHAGORAS
+    .main--p {
+
+        & h2 {
+            grid-row: 1/2;
+            grid-column: 1/4;
+            padding: 30px 0;
+            margin: 0 15px;
+            border-top: 4px solid colors(accent--blue);
+        }
+
+        & .pre--img {
+            grid-row: 2/3;
+            grid-column: 1/2;   
+        }
+
+        & .p--info {
+            grid-row: 2/3;
+            grid-column: 2/4;
+        }
+    }
+
+    .main--s {
+
+        & h2 {
+            grid-row: 1/2;
+            grid-column: 1/4;
+            padding: 30px 0;
+            margin: 0 15px;
+            border-top: 4px solid colors(accent--blue);
+        }
+
+        & .s--img {
+            grid-row: 2/3;
+            grid-column: 3/4;  
+            margin: 0px; 
+            //display: block;
+           // float: right;
+        }
+
+        & .s--info {
+            grid-row: 2/3;
+            grid-column: 1/3;
+        }
+    }
+
+    .main--a {
+
+        & h2 {
+            grid-row: 1/2;
+            grid-column: 1/4;
+            padding: 30px 0;
+            margin: 0 15px;
+            border-top: 4px solid colors(accent--blue);
+        }
+
+        & .a--img {
+            grid-row: 2/3;
+            grid-column: 1/2;   
+        }
+
+        & .a--info {
+            grid-row: 2/3;
+            grid-column: 2/4;
+        }
+    }
+
+    .link--area {
+        width: calc(100vw - 130px);
+        margin: 0 65px;
+        border-top: 4px solid colors(accent--blue);
+    }
+}
+
+
+    
