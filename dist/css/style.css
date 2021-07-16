@@ -164,16 +164,32 @@ h2 {
   color: #f0466b;
 }
 
-p {
+p, span, a {
   font-family: "Overpass", sans-serif;
   font-size: 1.4rem;
   line-height: 2rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  font-size: 1.6rem;
+  color: #0a0644;
 }
 
 i {
   margin: 10px;
   font-size: 5rem;
   color: #13a4e7;
+}
+
+i:hover {
+  font-size: 5.4rem;
+  -webkit-transform: rotate(-20deg);
+          transform: rotate(-20deg);
+  color: #0a0644;
 }
 
 header {
@@ -252,9 +268,13 @@ header .hamburger .patty.open::after {
   width: calc(100vw - 60px);
   margin: 0 30px;
   font-family: "Overpass", sans-serif;
-  font-size: 2.75rem;
-  position: absolute;
+  position: relative;
   top: 7.6rem;
+}
+
+.welcome p {
+  font-size: 2.3rem;
+  line-height: 2.3re;
 }
 
 .project--sect {
@@ -264,12 +284,7 @@ header .hamburger .patty.open::after {
   height: fit-content;
 }
 
-.project--sect h2 {
-  display: block;
-  width: 100%;
-}
-
-.project--sect .flex {
+.flex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -284,32 +299,66 @@ header .hamburger .patty.open::after {
           justify-content: space-between;
 }
 
-.project--sect .flex .project--box {
-  width: calc(50vw - 35px);
-  height: 200px;
-  margin-top: 10px;
-  background-color: #0a0644;
+.project--box {
+  width: 75vw;
+  height: 25em;
+  margin: 10px auto;
+  background-color: #f1f1f1;
+  overflow: hidden;
+  border: 1px solid #424242;
 }
 
-.project--sect .flex .project--box p {
-  width: calc(50vw - 55px);
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-  margin: 10px 10px;
-  position: absolute;
+.project--box p {
+  width: 75vw;
+  height: 5em;
+  line-height: 5em;
+  font-size: 1.5rem;
   color: #13a4e7;
   text-align: center;
-  background-color: rgba(26, 25, 25, 0.644);
 }
 
-.project--sect .flex .project--box img {
-  width: calc(50vw - 35px);
-  height: 200px;
+.project--box img {
+  width: 75vw;
+  height: 20em;
   -o-object-fit: cover;
      object-fit: cover;
-  -o-object-position: 50% 50%;
-     object-position: 50% 50%;
+  -o-object-position: 50% 80%;
+     object-position: 50% 80%;
+}
+
+.skill {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact--icon--container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.clickhere {
+  padding: 0.2rem;
+  border: 0.5px solid #13a4e7;
+  border-radius: 5px;
+  color: #13a4e7;
 }
 
 footer {
