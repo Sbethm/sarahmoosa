@@ -1,0 +1,420 @@
+@import "./reset", "./variables";
+
+/* Table of Contents
+    1. Overall Styling (mobile, etc.)
+        1.1 Header
+        1.2 Welcome
+        1.3 Projects
+        1.4 Skills
+        1.5 About
+        1.6 Contact
+        1.7 Footer
+    2. Tablet Styling
+        2.1 Landscape
+            2.1.1 Header
+            2.1.2 Welcome
+            2.1.3 Projects
+            2.1.4 Skills
+            2.1.5 About
+            2.1.6 Contact
+            2.1.7 Footer
+        2.2 Portrait
+            2.2.1 Header
+            2.2.2 Welcome
+            2.2.3 Projects
+            2.2.4 Skills
+            2.2.5 About
+            2.2.6 Contact
+            2.2.7 Footer
+    3. Computer Styling
+        3.1 Header
+        3.2 Welcome
+        3.3 Projects
+        3.4 Skills
+        3.5 About
+        3.6 Contact
+        3.7 Footer
+*/
+
+//1. OVERALL STYLING
+body {
+    background-size: 40px 40px;
+    background-image:
+      linear-gradient(to right, grey 1px, transparent 1px),
+      linear-gradient(to bottom, grey 1px, transparent 1px);
+      background-attachment: fixed;
+}
+
+section {
+    width: calc(100vw - 80px);
+    margin: 20px;
+    padding: 20px;
+    background-color: $bgColorWhite;
+    box-shadow: 2px 2px 10px 1px $accentColorShadow;
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-family: $accentFont;
+    font-size: 2.5rem;
+    color: $accentColorMaroon;
+}
+
+p, span, a {
+    font-family: $contentFont;
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+i {
+    margin: 10px;
+    font-size: 5rem;
+    color: $accentColorLightBlue;
+
+    &:hover {
+        //box-shadow: 2px 2px 10px 1px $accentColorShadow;
+        font-size: 5.4rem;
+        transform: rotate(-20deg);
+        color: $accentColorDeepBlue;
+    }
+}
+
+    //1.1 HEADER
+    header {
+        height: 5rem;
+        width: 100vw;
+        display: block;
+        position: fixed;
+        top: 0;
+        background-color: $bgColorWhite;
+        border-bottom: 0.5px solid $accentColorDeepBlue;
+        box-shadow: 2px 2px 10px 1px $accentColorShadow;
+        overflow: hidden;
+        z-index: 9;
+
+        & h1 {
+            font-family: $accentFont; 
+            font-size: $h1Size;  
+            padding: 1.25rem;
+        }
+
+        & .hamburger {
+            position: absolute;
+            top: 2em;
+            right: 2em;
+            z-index: 1;
+            width: 28px;
+            //@include transition-ease;
+
+            & .patty {
+            position: absolute;
+            top: 0.5rem;
+            right: 0;
+            height: 3px;
+            width: 28px;
+            background: #000;
+            //@include transition-ease;   
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    top: -8px;
+                    height: 3px;
+                    width: 28px;
+                    background: #000;
+                    //@include transition-ease;
+                }
+
+                &::after{
+                    content: '';
+                    position: absolute;
+                    top: 8px;
+                    height: 3px;
+                    width: 20px;
+                    background: #000;
+                    //@include transition-ease;
+                }
+
+                &.open {
+                    transform: rotate(720deg);
+                    background: transparent;
+
+                    &::before {
+                        transform: rotate(45deg) translate(5px, 8px);
+                    }
+
+                    &::after{
+                        width: 28px;
+                        transform: rotate(-45deg) translate(3px, -7px);
+                    }
+                }    
+            }
+        }
+    }
+
+    //1.2 WELCOME
+    .welcome {
+        width: calc(100vw - 60px);
+        margin: 0 30px;
+        font-family: $contentFont;
+        position: relative;
+        top: 7.6rem;
+
+        & span {
+            color: $accentColorLightBlue;
+            font-weight: 700;
+            font-size: 2.3rem;
+            font-style: italic;
+        }
+
+        & p {
+            font-size: 2.3rem;
+            line-height: 2.8rem;
+        }
+    }
+
+    //1.3 PROJECTS
+    .project--sect {
+        margin-top: 16rem;
+        height: fit-content;
+    }
+
+    .flex {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .project--box {
+        width: 75vw; //
+        height: 25em;
+        margin: 10px auto;
+        background-color: $bgColorWhite;
+        overflow: hidden;
+        border: 1px solid $accentColorShadow;
+
+        & p {
+            width: 75vw;
+            height: 5em;
+            line-height: 5em;
+            font-size: 1.5rem;
+            color: $accentColorLightBlue;
+            text-align: center;
+        }
+
+        & img {
+            width: 75vw;
+            height: 20em;
+            object-fit: cover;
+            object-position: 50% 80%;
+            
+        }        
+    }
+    
+    //1.4 Skills
+    .skill {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+
+    //1.5 ABOUT
+    .about--sect--p {
+        text-indent: 20px;
+    } 
+    
+    .wannasee {
+        padding-top: 20px;
+        color: $accentColorLightBlue;
+        font-style: italic;
+        text-align: center;
+    }
+    
+    .clickhere--div {
+        margin: 20px;
+        text-align: center;
+    }
+
+    .clickhere {
+        font-size: 2rem;
+        padding: 0.5rem;
+        border: 0.5px solid $accentColorLightBlue;
+        border-radius: 5px;
+        color: $accentColorLightBlue;
+
+        &:hover {
+            font-size: 2.3rem;
+            color: $bgColorWhite;
+            background-color: $accentColorDeepBlue;
+        }
+    }
+
+    // 1.6 Contact
+    .contact--icon--container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contact--sect--p{
+        text-indent: 20px;
+    }
+
+    //1.7 FOOTER
+    footer {
+        width: 100vw;
+        height: 5rem;
+        position: absolute;
+        background-color: $bgColorWhite;
+        box-shadow: 2px 2px 10px 1px $accentColorShadow;
+    }
+
+//2. TABLET STYLING
+    //2.1 LANDSCAPE
+    @media only screen and (min-device-width : 768px) and (max-device-width : 1366px) and (orientation : landscape) {
+        //2.2 WELCOME
+        .welcome {
+            width: calc(100vw - 120px);
+            margin: 0 60px;
+            font-family: $contentFont;
+            position: relative;
+            top: 7.6rem;
+
+            & span {
+                color: $accentColorLightBlue;
+                font-weight: 700;
+                font-size: 2.3rem;
+                font-style: italic;
+            }
+
+            & p {
+                font-size: 2.3rem;
+                line-height: 2.8rem;
+            }
+        }
+
+        //1.3 PROJECTS
+        .project--sect {
+            margin-top: 16rem;
+            height: fit-content;
+        }
+
+        .flex {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .project--box {
+            width: 75vw; //
+            height: 25em;
+            margin: 10px auto;
+            background-color: $bgColorWhite;
+            overflow: hidden;
+            border: 1px solid $accentColorShadow;
+
+            & p {
+                width: 75vw;
+                height: 5em;
+                line-height: 5em;
+                font-size: 1.5rem;
+                color: $accentColorLightBlue;
+                text-align: center;
+            }
+
+            & img {
+                width: 75vw;
+                height: 20em;
+                object-fit: cover;
+                object-position: 50% 80%;
+                
+            }        
+        }
+        
+        //1.4 Skills
+        .skill {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+    //2.2 PORTRAIT
+    @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+        //1.2 WELCOME
+        .welcome {
+            width: calc(100vw - 60px);
+            margin: 0 30px;
+            font-family: $contentFont;
+            position: relative;
+            top: 7.6rem;
+
+            & span {
+                color: $accentColorLightBlue;
+                font-weight: 700;
+                font-size: 2.3rem;
+                font-style: italic;
+            }
+
+            & p {
+                font-size: 2.3rem;
+                line-height: 2.8rem;
+            }
+        }
+
+        //1.3 PROJECTS
+        .project--sect {
+            margin-top: 16rem;
+            height: fit-content;
+        }
+
+        .flex {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .project--box {
+            width: 75vw; //
+            height: 25em;
+            margin: 10px auto;
+            background-color: $bgColorWhite;
+            overflow: hidden;
+            border: 1px solid $accentColorShadow;
+
+            & p {
+                width: 75vw;
+                height: 5em;
+                line-height: 5em;
+                font-size: 1.5rem;
+                color: $accentColorLightBlue;
+                text-align: center;
+            }
+
+            & img {
+                width: 75vw;
+                height: 20em;
+                object-fit: cover;
+                object-position: 50% 80%;
+                
+            }        
+        }
+        
+        //1.4 Skills
+        .skill {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
