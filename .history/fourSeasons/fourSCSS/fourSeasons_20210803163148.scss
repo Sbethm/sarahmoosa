@@ -1,0 +1,11 @@
+@import "./fourResets.scss", "./fourSeaVariables";
+
+h1 {
+    font-family: $headerFont;
+    font-size: 12rem;
+
+    & span {
+        font-family: $yuzawaFont;
+        font-size: 12rem;
+    }
+}

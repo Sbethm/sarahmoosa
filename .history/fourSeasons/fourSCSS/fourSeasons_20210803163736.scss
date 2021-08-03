@@ -1,0 +1,16 @@
+@import "./fourResets.scss", "./fourSeaVariables";
+
+h1 {
+    font-family: $headerFont;
+    font-size: 2rem;
+
+    & span {
+        font-family: $yuzawaFont;
+        font-size: 3rem;
+    }
+}
+
+.fourseasons--intro {
+    width: calc(100vw - 40px);
+    
+}

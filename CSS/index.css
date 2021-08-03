@@ -312,12 +312,20 @@ header .hamburger .patty.open::after {
 }
 
 .project--box p {
-  width: 75vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 74vw;
   height: 5em;
-  line-height: 5em;
   font-size: 1.5rem;
   color: #13a4e7;
   text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .project--box img {

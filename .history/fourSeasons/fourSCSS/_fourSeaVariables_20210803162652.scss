@@ -1,0 +1,34 @@
+/* Table of Contents
+    1. Fonts
+        1.1 Font Family
+        1.2 Font Size
+        1.2 Font Weight
+    2. Colors
+    3. Transitions
+*/
+
+//1. Fonts
+    //1.1 Font Family
+    $headerFont: 'Montserrat', sans-serif;
+    $yuzawaFont: 'WindSong', cursive;
+    $japaneseFont: 'Noto Serif JP', serif;
+    $contentFont: 'Indie Flower', cursive;
+    //1.2 Font Size 
+    $h1Size: 2.5rem;
+
+//2. Colors
+    //2.1 Background Colors
+        $bgColorWhite: rgb(241, 241, 241);
+        $bgColorWinter: rgb(138, 199, 214);
+        $bgColorSpring: rgb(214, 213, 138);
+        $bgColorSummer: rgb(175, 214, 138);
+        $bgColorAutumn: rgb(214, 175, 138);
+
+    //2.2 Accent Colors  
+        $accentColorBlack: rgb(12, 12, 12);  
+        $accentColorDeepBlue: rgb(15, 45, 59);
+        $accentColorPink: rgb(245, 87, 121);
+        $accentColorGreen: rgb(100, 245, 87);
+        $accentColorShadow: rgb(66, 66, 66);
+
+//#. Transitions
