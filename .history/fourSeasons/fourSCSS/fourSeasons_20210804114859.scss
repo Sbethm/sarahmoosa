@@ -43,12 +43,45 @@ h1, h2, p {
 
 h2 {
     font-size: 1.5rem;
-    margin-left: 30px;
+}
+
+.inside--container {
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    overflow-x: auto;
+}
+
+.slide {
+    width: calc(100vw;
+    margin: 50px;
+}
+
+.jap--title {
+    width: fit-content;
+    height: 150px;
+    font-family: $japaneseFont;
+    font-size: 2rem;
+    padding: 15px 5px;
+    border: solid 1px $accentColorBlack;
+    text-align: center;
+    writing-mode: tb-rl;
 }
 
 p {
     font-size: 1rem;
     line-height: 1.3rem;
+}
+
+.pic--title--container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    height: 150px;
+    border: solid 1px $accentColorBlack;
 }
 
 //1.1 
@@ -74,56 +107,4 @@ h1 {
     }
 }
 
-//SLIDES
-.season {
-    margin: 20px 0px;
-}
-
-.inside--container {
-    display: flex;
-    flex-direction: row;
-    padding: 20px 0;
-    overflow: hidden;
-    overflow-x: auto;
-}
-
-.slide {
-    & p {
-        margin-left: 30px;
-    }
-}
-
-.pic--title--container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100vw;
-}
-
-.jap--title {
-    width: fit-content;
-    height: 150px;
-    font-family: $japaneseFont;
-    font-size: 2rem;
-    padding: 15px 5px;
-    border: solid 1px $accentColorBlack;
-    border-right: hidden;
-    text-align: center;
-    writing-mode: tb-rl;
-}
-
-.pic {
-    width: calc(100vw - 100px);
-    height: 182px;
-    overflow: hidden;
-    border: solid 1px $accentColorBlack;
-}
-
-img {
-    height: 182px;
-}
-
-//WINTER
-.winter {
-    padding-top: 100px;
-}
+//1.2

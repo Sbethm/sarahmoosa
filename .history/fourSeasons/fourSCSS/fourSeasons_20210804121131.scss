@@ -87,17 +87,15 @@ h1 {
     overflow-x: auto;
 }
 
-.slide {
-    & p {
-        margin-left: 30px;
-    }
-}
-
 .pic--title--container{
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100vw;
+
+    & p {
+        margin-left: ;
+    }
 }
 
 .jap--title {
@@ -107,7 +105,6 @@ h1 {
     font-size: 2rem;
     padding: 15px 5px;
     border: solid 1px $accentColorBlack;
-    border-right: hidden;
     text-align: center;
     writing-mode: tb-rl;
 }
@@ -116,11 +113,11 @@ h1 {
     width: calc(100vw - 100px);
     height: 182px;
     overflow: hidden;
-    border: solid 1px $accentColorBlack;
 }
 
 img {
-    height: 182px;
+    
+    border: solid 1px $accentColorBlack;
 }
 
 //WINTER
