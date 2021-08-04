@@ -422,10 +422,8 @@ footer {
     
             &.open {
                 
-                &::before {
-                    top: -13px;
-                }
 
+                
                 &::after {
                     width: 40px;
                     transform: rotate(50deg) translateX(-6px) translateY(-7px);

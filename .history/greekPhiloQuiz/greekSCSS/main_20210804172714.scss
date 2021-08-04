@@ -422,10 +422,6 @@ footer {
     
             &.open {
                 
-                &::before {
-                    top: -13px;
-                }
-
                 &::after {
                     width: 40px;
                     transform: rotate(50deg) translateX(-6px) translateY(-7px);
@@ -470,7 +466,7 @@ footer {
     }
 
     p {
-    margin: 70px 60px 0 60px;
+        margin: 40px 60px 0 60px;
     font-size: 2rem;
     line-height: 2.8rem;
     text-indent: 30px;
