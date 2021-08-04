@@ -84,6 +84,10 @@ i {
     }
 }
 
+img {
+    width: 100%;
+}
+
     //1.1 HEADER
     header {
         height: 5rem;
@@ -215,6 +219,7 @@ i {
             height: 20em;
             object-fit: cover;
             object-position: 50% 80%;
+            
         }        
     }
     
