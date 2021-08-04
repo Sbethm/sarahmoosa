@@ -89,7 +89,8 @@ h1 {
 }
 
 .slide {
-
+    scroll-snap-type: x proximity;
+    
     & p {
         margin: 10px 0 0 30px;
     }

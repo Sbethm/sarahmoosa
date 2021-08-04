@@ -85,11 +85,11 @@ h1 {
     padding: 20px 0;
     overflow: hidden;
     overflow-x: auto;
-    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: ;
 }
 
 .slide {
-
     & p {
         margin: 10px 0 0 30px;
     }
