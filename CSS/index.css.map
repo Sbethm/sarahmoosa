@@ -4,7 +4,8 @@
     "sources": [
         "../SCSS/index.scss",
         "../SCSS/_reset.scss",
-        "../SCSS/_variables.scss"
+        "../SCSS/_variables.scss",
+        "../SCSS/_mixins.scss"
     ],
     "names": [],
     "file": "index.css"
