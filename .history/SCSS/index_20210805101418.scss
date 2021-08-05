@@ -385,12 +385,23 @@ i {
 //3. DESKTOP AND LAPTOP STYLE
 @media only screen  and (min-width : 1224px) {
     //OVERALL STYLING
-    section {
-        width: calc(100vw - 27.5rem);
-        /* padding: 20px; */
+    body {
+        background-size: 40px 40px;
+        background-image:
+        linear-gradient(to right, grey 1px, transparent 1px),
+        linear-gradient(to bottom, grey 1px, transparent 1px);
+        background-attachment: fixed;
     }
 
-    /* h2 {
+    section {
+        width: calc(100vw - 30px - 20rem);
+        margin: 20px;
+        padding: 20px;
+        background-color: $bgColorWhite;
+        box-shadow: 2px 2px 10px 1px $accentColorShadow;
+    }
+
+    h2 {
         margin-bottom: 20px;
         font-family: $accentFont;
         font-size: 2.5rem;
@@ -419,7 +430,7 @@ i {
             transform: rotate(-20deg);
             color: $accentColorDeepBlue;
         }
-    } */
+    }
 
         //3.1 HEADER
         header {
@@ -468,8 +479,9 @@ i {
         }
 
         //3.3 PROJECTS
-        .project--sect { 
+        .project--sect {
             margin: 16rem 2.5rem 0 20rem;
+            height: fit-content;
         }
 
         .flex {
@@ -511,20 +523,14 @@ i {
             margin: 50px 2.5rem 0 20rem;
         }
 
-        /*
         .skill {
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-        } */
+        }
         
         //3.5 ABOUT
-        .about--sect {
-            margin: 50px 2.5rem 0 20rem;
-        }
-
-        /*
         .about--sect--p {
             text-indent: 20px;
         } 
@@ -553,14 +559,12 @@ i {
                 color: $bgColorWhite;
                 background-color: $accentColorDeepBlue;
             }
-        } */
+        }
 
         // 3.6 CONTACT
         .contact--sect {
-            margin: 50px 2.5rem 2.5rem 20rem;
+            
         }
-
-        /*
         .contact--icon--container {
             display: flex;
             justify-content: center;
@@ -569,7 +573,7 @@ i {
 
         .contact--sect--p{
             text-indent: 20px;
-        } 
+        }
 
         //3.7 FOOTER
         footer {
@@ -579,6 +583,5 @@ i {
             background-color: $bgColorWhite;
             box-shadow: 2px 2px 10px 1px $accentColorShadow;
         }
-        */
 
 }
