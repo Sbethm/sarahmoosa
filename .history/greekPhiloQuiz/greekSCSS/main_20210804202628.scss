@@ -540,7 +540,7 @@ footer {
 
     h2 {
         &::after {
-            top: -2px; left: -15px;
+            top: -2px; left: 50px;
             width: calc(100vw - 100px);
         }
     }
@@ -553,17 +553,7 @@ footer {
     .main--p,
     .main--s,
     .main--a {
-        width: calc(100vw - 100px);
-        padding-bottom: 40px;
-        margin: 0 50px;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 120px auto;
-
-        & p {
-            text-align: center;
-            border-bottom: none;
-        }
+        
     }
 
     //ABOUT
@@ -592,7 +582,7 @@ footer {
     }
 
     .about--info {
-        padding: 120px 20px 60px 20px;
+        padding: 60px 20px;
         text-align: center;
     }
 

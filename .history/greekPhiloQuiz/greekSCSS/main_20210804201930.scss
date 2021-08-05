@@ -540,8 +540,8 @@ footer {
 
     h2 {
         &::after {
-            top: -2px; left: -15px;
-            width: calc(100vw - 100px);
+            top: -2px; left: 0px;
+            width: calc(100vw - 130px);
         }
     }
 
@@ -580,8 +580,9 @@ footer {
 
     
         &::before {
+            //width: 100vw;
             height: 475px;
-            top: 0; left: -50px;
+            top: 0; left: -150;
             background-size: 100%;
         }
 
@@ -592,7 +593,7 @@ footer {
     }
 
     .about--info {
-        padding: 120px 20px 60px 20px;
+        padding: 60px 20px;
         text-align: center;
     }
 

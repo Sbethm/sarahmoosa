@@ -540,8 +540,8 @@ footer {
 
     h2 {
         &::after {
-            top: -2px; left: -15px;
-            width: calc(100vw - 100px);
+            top: -2px; left: 0px;
+            width: calc(100vw - 130px);
         }
     }
 
@@ -567,32 +567,22 @@ footer {
     }
 
     //ABOUT
-    main {
-        padding-top: 100px;
-    }
-    
-    //ABOUT SECTION
     .about--title {
-        height: 425px;
+        position: relative;
         width: calc(100vw - 100px);
-        margin: 0 50px;
-        justify-content: center;
+        padding: 0 50px;
+        text-align: center;
 
-    
-        &::before {
-            height: 475px;
-            top: 0; left: -50px;
-            background-size: 100%;
-        }
+        
+    }    
 
-        &::after {
-            width: calc(100vw - 100px);
-            left: 0;
-        }
+    #main--about__title::after {
+        top: -500px;//Top is different here in order the stretch the ::after element above and behind the header 
+        left: 50px;   
     }
 
     .about--info {
-        padding: 120px 20px 60px 20px;
+        padding: 30px 20px;
         text-align: center;
     }
 

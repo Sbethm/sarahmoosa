@@ -540,8 +540,8 @@ footer {
 
     h2 {
         &::after {
-            top: -2px; left: -15px;
-            width: calc(100vw - 100px);
+            top: -2px; left: 0px;
+            width: calc(100vw - 130px);
         }
     }
 
@@ -568,31 +568,24 @@ footer {
 
     //ABOUT
     main {
-        padding-top: 100px;
+        padding-top: 150px;
     }
     
     //ABOUT SECTION
     .about--title {
         height: 425px;
         width: calc(100vw - 100px);
-        margin: 0 50px;
-        justify-content: center;
-
+        margin: ;
     
         &::before {
+            top: 0; left: 0;
             height: 475px;
-            top: 0; left: -50px;
             background-size: 100%;
-        }
-
-        &::after {
-            width: calc(100vw - 100px);
-            left: 0;
         }
     }
 
     .about--info {
-        padding: 120px 20px 60px 20px;
+        padding: 30px 20px;
         text-align: center;
     }
 

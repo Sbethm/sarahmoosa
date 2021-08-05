@@ -329,6 +329,7 @@ button:hover {
     padding: 40px;
   }
   #quiz .answers label {
+    width: calc(100vw - 442px);
     cursor: pointer;
   }
   #quiz .answers label [type="radio"] {
@@ -913,8 +914,8 @@ footer {
   }
   h2::after {
     top: -2px;
-    left: 0px;
-    width: calc(100vw - 130px);
+    left: -15px;
+    width: calc(100vw - 100px);
   }
   p {
     border-bottom: none;
@@ -939,16 +940,29 @@ footer {
     text-align: center;
     border-bottom: none;
   }
-  .about--title {
-    width: calc(100vw - 100px);
-    padding: 0 50px;
+  main {
+    padding-top: 100px;
   }
-  #main--about__title::after {
-    top: -500px;
-    left: 15px;
+  .about--title {
+    height: 425px;
+    width: calc(100vw - 100px);
+    margin: 0 50px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .about--title::before {
+    height: 475px;
+    top: 0;
+    left: -50px;
+    background-size: 100%;
+  }
+  .about--title::after {
+    width: calc(100vw - 100px);
+    left: 0;
   }
   .about--info {
-    padding: 30px 20px;
+    padding: 120px 20px 60px 20px;
     text-align: center;
   }
   .main--p h2 {
