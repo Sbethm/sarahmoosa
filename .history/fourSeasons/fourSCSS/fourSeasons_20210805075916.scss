@@ -108,7 +108,7 @@ h1 {
 //SLIDES
 .season {
    padding-top: 2rem;
-   height: fit-content;
+   height: calc(100vh - 100px);
 }
 
 .inside--container {
