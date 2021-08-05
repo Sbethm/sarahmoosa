@@ -240,14 +240,14 @@ h1 span {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  margin-top: 2rem;
+  margin-top: 0.5rem;
   overflow: hidden;
   overflow-x: auto;
   scroll-behavior: smooth;
 }
 
 .slide p {
-  margin: 2rem 0 2rem 30px;
+  margin: 0.5rem 0 2rem 30px;
   width: calc(100vw - 60px);
   text-indent: 25px;
 }
