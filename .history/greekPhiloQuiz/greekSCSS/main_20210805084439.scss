@@ -306,7 +306,7 @@ footer {
                 
                 &::after {
                     width: 40px;
-                    transform: rotate(50deg) translateX(-2px) translateY(-6px);
+                    transform: rotate(50deg) translateX(-6px) translateY(-7px);
                 }
             }
         }
@@ -336,14 +336,10 @@ footer {
         height: 425px;
     
         &::before {
-            top: 0; left: 0;
+            top: 0px; left: 0;
             height: 475px;
             background-size: 100%;
         }
-    }
-
-    .about--info {
-        margin-top: 80px;
     }
 
     #main--about__title::after {

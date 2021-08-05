@@ -751,8 +751,8 @@ footer {
   }
   header .btn--hamburger.open::after {
     width: 40px;
-    -webkit-transform: rotate(50deg) translateX(-6px) translateY(-7px);
-            transform: rotate(50deg) translateX(-6px) translateY(-7px);
+    -webkit-transform: rotate(50deg) translateX(-2px) translateY(-6px);
+            transform: rotate(50deg) translateX(-2px) translateY(-6px);
   }
   header.height {
     height: 800px;
@@ -768,16 +768,19 @@ footer {
     padding: 25px;
   }
   main {
-    padding-top: 150px;
+    padding-top: 100px;
   }
   .about--title {
     height: 425px;
   }
   .about--title::before {
-    top: 100px;
+    top: 0;
     left: 0;
     height: 475px;
     background-size: 100%;
+  }
+  .about--info {
+    margin-top: 80px;
   }
   #main--about__title::after {
     top: -500px;
