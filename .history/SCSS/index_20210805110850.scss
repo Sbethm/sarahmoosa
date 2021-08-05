@@ -461,14 +461,12 @@ i {
             list-style: none;
 
             & li {
-                color: #000;
                 margin: 5rem 0;
                 font-family: $contentFont;
                 font-size: 1.5rem;
 
                 &:hover {
-                    text-decoration: underline;
-                    font-size: 2rem;
+                    font
                     color: $accentColorLightBlue;
                     cursor: pointer;
                     @include transition-ease;

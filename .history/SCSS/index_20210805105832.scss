@@ -81,7 +81,6 @@ i {
         font-size: 5.4rem;
         transform: rotate(-20deg);
         color: $accentColorDeepBlue;
-        @include transition-ease;
     }
 }
 
@@ -264,7 +263,6 @@ i {
             font-size: 2.3rem;
             color: $bgColorWhite;
             background-color: $accentColorDeepBlue;
-            @include transition-ease;
         }
     }
 
@@ -461,18 +459,9 @@ i {
             list-style: none;
 
             & li {
-                color: #000;
                 margin: 5rem 0;
                 font-family: $contentFont;
                 font-size: 1.5rem;
-
-                &:hover {
-                    text-decoration: underline;
-                    font-size: 2rem;
-                    color: $accentColorLightBlue;
-                    cursor: pointer;
-                    @include transition-ease;
-                }
             }
         }
 

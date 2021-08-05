@@ -186,6 +186,8 @@ i:hover {
   -webkit-transform: rotate(-20deg);
           transform: rotate(-20deg);
   color: #0a0644;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 header {
@@ -332,6 +334,8 @@ header .hamburger .patty.open::after {
   font-size: 1.8rem;
   color: #f1f1f1;
   background-color: #0a0644;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 .project--box img {
@@ -388,6 +392,8 @@ header .hamburger .patty.open::after {
   font-size: 2.3rem;
   color: #f1f1f1;
   background-color: #0a0644;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 .contact--icon--container {
@@ -568,6 +574,24 @@ footer {
   }
   header .hamburger {
     display: none;
+  }
+  ul {
+    padding: 1.25rem;
+    list-style: none;
+  }
+  ul li {
+    color: #000;
+    margin: 5rem 0;
+    font-family: "Overpass", sans-serif;
+    font-size: 1.5rem;
+  }
+  ul li:hover {
+    text-decoration: underline;
+    font-size: 2rem;
+    color: #13a4e7;
+    cursor: pointer;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
   }
   .welcome {
     width: calc(100vw - 30px - 20rem);
