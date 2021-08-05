@@ -208,12 +208,6 @@ i {
             text-align: center;
             justify-content: center;
             align-items: center;
-
-            &:hover {
-                font-size: 1.8rem;
-                color: $bgColorWhite;
-                background-color: $accentColorDeepBlue;
-            }
         }
 
         & img {
@@ -223,8 +217,6 @@ i {
             object-position: 50% 80%;
         }        
     }
-
-    .project--link
     
     //1.4 SKILLS
     .skill {
@@ -497,7 +489,7 @@ i {
 
             & p {
                 display: flex;
-                width: 25vw;
+                width: 74vw;
                 height: 5em;
                 font-size: 1.5rem;
                 color: $accentColorLightBlue;

@@ -208,12 +208,6 @@ i {
             text-align: center;
             justify-content: center;
             align-items: center;
-
-            &:hover {
-                font-size: 1.8rem;
-                color: $bgColorWhite;
-                background-color: $accentColorDeepBlue;
-            }
         }
 
         & img {

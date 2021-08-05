@@ -199,6 +199,8 @@ i {
         overflow: hidden;
         border: 1px solid $accentColorShadow;
 
+        & 
+
         & p {
             display: flex;
             width: 74vw;
@@ -208,12 +210,6 @@ i {
             text-align: center;
             justify-content: center;
             align-items: center;
-
-            &:hover {
-                font-size: 1.8rem;
-                color: $bgColorWhite;
-                background-color: $accentColorDeepBlue;
-            }
         }
 
         & img {
@@ -223,8 +219,6 @@ i {
             object-position: 50% 80%;
         }        
     }
-
-    .project--link
     
     //1.4 SKILLS
     .skill {

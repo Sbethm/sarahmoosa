@@ -328,6 +328,12 @@ header .hamburger .patty.open::after {
           align-items: center;
 }
 
+.project--box p:hover {
+  font-size: 1.8rem;
+  color: #f1f1f1;
+  background-color: #0a0644;
+}
+
 .project--box img {
   width: 75vw;
   height: 20em;
@@ -337,6 +343,7 @@ header .hamburger .patty.open::after {
      object-position: 50% 80%;
 }
 
+.project--link
 .skill {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -600,7 +607,7 @@ footer {
             justify-content: space-between;
   }
   .project--box {
-    width: 75vw;
+    width: 25vw;
     height: 25em;
     margin: 10px auto;
     background-color: #f1f1f1;
@@ -611,7 +618,7 @@ footer {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 74vw;
+    width: 25vw;
     height: 5em;
     font-size: 1.5rem;
     color: #13a4e7;
@@ -624,7 +631,7 @@ footer {
             align-items: center;
   }
   .project--box img {
-    width: 75vw;
+    width: 25vw;
     height: 20em;
     -o-object-fit: cover;
        object-fit: cover;
