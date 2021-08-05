@@ -594,10 +594,11 @@ i {
 
         
         .contact--icon--container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
 
-            & i {
-                padding: 0 20px;
-            }
+            &
         }
         /* 
         .contact--sect--p{

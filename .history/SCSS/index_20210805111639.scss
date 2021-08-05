@@ -544,7 +544,6 @@ i {
 
         
         .skill {
-            padding: 0 20px;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -592,14 +591,13 @@ i {
             margin: 50px 2.5rem 2.5rem 20rem;
         }
 
-        
+        /*
         .contact--icon--container {
-
-            & i {
-                padding: 0 20px;
-            }
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
-        /* 
+
         .contact--sect--p{
             text-indent: 20px;
         } 
