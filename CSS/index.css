@@ -419,7 +419,7 @@ footer {
   }
   .project--box {
     width: 24vw;
-    height: 18rem;
+    height: 20rem;
     margin: 8px auto;
   }
   .project--box p {
@@ -448,6 +448,10 @@ footer {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+  .contact--sect--p {
+    text-indent: 0px;
+    text-align: center;
   }
 }
 
@@ -462,7 +466,7 @@ footer {
   }
   .project--box {
     width: 24vw;
-    height: 18rem;
+    height: 20rem;
     margin: 8px auto;
   }
   .project--box p {
@@ -471,11 +475,15 @@ footer {
     padding-top: 1rem;
     line-height: 2rem;
   }
+  .project--box .project--img {
+    width: 100%;
+    height: 100%;
+  }
   .project--box img {
-    width: 24vw;
-    height: 18rem;
-    -o-object-position: 50%;
-       object-position: 50%;
+    width: 100%;
+    height: 100%;
+    -o-object-position: cover;
+       object-position: cover;
   }
   .skills--container {
     display: -webkit-box;
@@ -491,6 +499,10 @@ footer {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+  .contact--sect--p {
+    text-indent: 0px;
+    text-align: center;
   }
 }
 /*# sourceMappingURL=index.css.map */
