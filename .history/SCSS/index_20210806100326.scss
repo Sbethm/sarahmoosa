@@ -103,7 +103,7 @@ i {
             font-size: $h1Size;  
             padding: 1.25rem;
         }
-        /*
+        /
         & .hamburger {
             position: absolute;
             top: 2em;
@@ -156,7 +156,6 @@ i {
                 }    
             }
         }
-        */
     }
 
     //1.2 WELCOME
@@ -299,15 +298,7 @@ i {
     }
 
     .contact--sect--p{
-        //text-indent: 20px;
-        text-align: center;
-
-        & span {
-            color: $accentColorLightBlue;
-            font-weight: 700;
-            font-size: 1.8rem;
-            font-style: italic;
-        }
+        text-indent: 20px;
     }
 
     //1.7 FOOTER
