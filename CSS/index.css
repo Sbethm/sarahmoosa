@@ -707,7 +707,7 @@ footer {
   }
   .welcome {
     width: calc(100vw - 27.5rem);
-    margin-top: calc(50vh - 190px);
+    margin-top: calc(50vh - 221px);
     margin-bottom: calc(50vh - 190px);
     margin-left: 20rem;
     /*
@@ -722,10 +722,12 @@ footer {
                 font-style: italic;
             }
 
-            & p {
-                font-size: 2.3rem;
-                line-height: 2.8rem;
-            } */
+            */
+  }
+  .welcome p {
+    margin: 20px;
+    font-size: 2.3rem;
+    line-height: 2.8rem;
   }
   .project--sect {
     margin: 40px 2.5rem 0 20rem;
