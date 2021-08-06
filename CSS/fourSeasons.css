@@ -154,7 +154,6 @@ h1, p {
 h2 {
   font-family: "WindSong", cursive;
   font-size: 2rem;
-  margin-left: 30px;
 }
 
 p {
@@ -278,6 +277,40 @@ h1 span {
 .season {
   padding-top: 2rem;
   height: calc(100vh - 100px);
+}
+
+.section--title--container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 30px;
+}
+
+.section--title--container i {
+  font-size: 2.5rem;
+  -webkit-animation: next 1.2s infinite normal ease-out;
+          animation: next 1.2s infinite normal ease-out;
+}
+
+@keyframes next {
+  0% {
+    -webkit-transform: translatex(0px);
+            transform: translatex(0px);
+  }
+  50% {
+    -webkit-transform: translatex(10px);
+            transform: translatex(10px);
+  }
+  100% {
+    -webkit-transform: translatex(0px);
+            transform: translatex(0px);
+  }
 }
 
 .inside--container {

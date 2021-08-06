@@ -143,31 +143,6 @@ h1 {
    height: calc(100vh - 100px);
 }
 
-.section--title--container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0 30px;
-    
-
-    & i {
-        font-size: 2.5rem;
-        animation: next 1.2s infinite normal ease-out;
-    }
-
-    @keyframes next {
-        0%{
-            transform: translatex(0px);
-        }
-        50%{
-            transform: translatex(10px);
-        }
-        100%{
-            transform: translatex(0px); 
-        }
-    }
-}
-
 .inside--container {
     display: flex;
     flex-direction: row;
@@ -230,6 +205,51 @@ img {
     //1.4.1 WINTER
     .winter {
         background-color: $bgColorWinter;
+    }
+
+    .section--title--container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 30px;
+        animation: next 1.2s infinite normal ease-out;
+
+        & i {
+            font-size: 2.5rem;
+            
+        }
+
+        ::after {
+            
+            content: "";
+            position: absolute;
+            width: 0;
+            height: 0;
+            border-left: 20px solid transparent;
+            border-right: 20px solid transparent;
+            border-top: 20px solid #000;
+            top: 480px;
+            left: calc(50vw - 20px);
+        
+            @keyframes next {
+                0%{
+                    transform: translateY(0px);
+                }
+                50%{
+                    transform: translateY(10px);
+                }
+                100%{
+                    transform: translateY(0px); 
+                }
+            }
+        
+        }
+
+
+
+
+
+
     }
 
     //1.4.2 SPRING
