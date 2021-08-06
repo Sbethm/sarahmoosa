@@ -479,18 +479,6 @@ img {
     and (max-height: 1366px) 
     and (orientation: portrait) 
     and (-webkit-min-device-pixel-ratio: 1.5) {
-
-        .fourseasons--intro {
-            width: calc(100vw - 600px);
-            margin: 2rem 300px;
-        } 
-
-        .intro--p {  
-            &::after {
-                top: 900px;
-            }
-        }
-
     }
 
     /* Landscape */
@@ -499,16 +487,5 @@ img {
     and (max-height: 1366px) 
     and (orientation: landscape) 
     and (-webkit-min-device-pixel-ratio: 1.5) {
-
-        .fourseasons--intro {
-            width: calc(100vw - 1000px);
-            margin: 2rem 500px;
-        } 
-
-        .intro--p {  
-            &::after {
-                top: 700px;
-            }
-        }
-
+        
     }
