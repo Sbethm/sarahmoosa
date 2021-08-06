@@ -292,42 +292,18 @@ h1 span {
       -ms-flex-align: center;
           align-items: center;
   margin: 0 30px;
-}
-
-.section--title--container i {
-  font-size: 1.5rem;
-  -webkit-animation: next 1.2s infinite normal ease-out;
-          animation: next 1.2s infinite normal ease-out;
-}
-
-@-webkit-keyframes next {
-  0% {
-    -webkit-transform: translatex(0px);
+  /*
+    @keyframes next {
+        0%{
             transform: translatex(0px);
-  }
-  50% {
-    -webkit-transform: translatex(10px);
+        }
+        50%{
             transform: translatex(10px);
-  }
-  100% {
-    -webkit-transform: translatex(0px);
-            transform: translatex(0px);
-  }
-}
-
-@keyframes next {
-  0% {
-    -webkit-transform: translatex(0px);
-            transform: translatex(0px);
-  }
-  50% {
-    -webkit-transform: translatex(10px);
-            transform: translatex(10px);
-  }
-  100% {
-    -webkit-transform: translatex(0px);
-            transform: translatex(0px);
-  }
+        }
+        100%{
+            transform: translatex(0px); 
+        }
+    } */
 }
 
 .inside--container {
@@ -416,6 +392,25 @@ img {
      object-fit: cover;
 }
 
+.sights i {
+  margin: 0 40px;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.activity i {
+  margin: 0 40px;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.food i {
+  visibility: hidden;
+  margin: 20px 40px;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
 .winter {
   background-color: #a4cbd4;
 }
@@ -478,38 +473,23 @@ img {
         -ms-flex-align: center;
             align-items: center;
     margin: 0 30px;
+    /*
+            @keyframes next {
+                0%{
+                    transform: translatex(0px);
+                }
+                50%{
+                    transform: translatex(10px);
+                }
+                100%{
+                    transform: translatex(0px); 
+                }
+            }
+            */
   }
   .section--title--container i {
     -webkit-animation: next 1.2s infinite normal ease-out;
             animation: next 1.2s infinite normal ease-out;
-  }
-  @-webkit-keyframes next {
-    0% {
-      -webkit-transform: translatex(0px);
-              transform: translatex(0px);
-    }
-    50% {
-      -webkit-transform: translatex(10px);
-              transform: translatex(10px);
-    }
-    100% {
-      -webkit-transform: translatex(0px);
-              transform: translatex(0px);
-    }
-  }
-  @keyframes next {
-    0% {
-      -webkit-transform: translatex(0px);
-              transform: translatex(0px);
-    }
-    50% {
-      -webkit-transform: translatex(10px);
-              transform: translatex(10px);
-    }
-    100% {
-      -webkit-transform: translatex(0px);
-              transform: translatex(0px);
-    }
   }
   .inside--container {
     margin-top: 4rem;
@@ -559,7 +539,9 @@ img {
     font-size: 2.5rem;
   }
   .season {
-    height: calc(100vh - 80px);
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
     padding-top: 2rem;
   }
   .inside--container {
@@ -577,39 +559,24 @@ img {
             align-items: center;
     width: calc(100vw - 500px);
     margin: 0 250px;
+    /*
+            @keyframes next {
+                0%{
+                    transform: translatex(0px);
+                }
+                50%{
+                    transform: translatex(10px);
+                }
+                100%{
+                    transform: translatex(0px); 
+                }
+            }
+            */
   }
   .section--title--container i {
     font-size: 1.5rem;
     -webkit-animation: next 1.2s infinite normal ease-out;
             animation: next 1.2s infinite normal ease-out;
-  }
-  @-webkit-keyframes next {
-    0% {
-      -webkit-transform: translatex(0px);
-              transform: translatex(0px);
-    }
-    50% {
-      -webkit-transform: translatex(10px);
-              transform: translatex(10px);
-    }
-    100% {
-      -webkit-transform: translatex(0px);
-              transform: translatex(0px);
-    }
-  }
-  @keyframes next {
-    0% {
-      -webkit-transform: translatex(0px);
-              transform: translatex(0px);
-    }
-    50% {
-      -webkit-transform: translatex(10px);
-              transform: translatex(10px);
-    }
-    100% {
-      -webkit-transform: translatex(0px);
-              transform: translatex(0px);
-    }
   }
   .slide p {
     width: calc(100vw - 500px);
