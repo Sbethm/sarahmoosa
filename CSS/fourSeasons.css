@@ -219,8 +219,8 @@ a:hover {
 }
 
 .intro--p::after {
-  -webkit-animation: next 1.2s infinite normal ease-out;
-          animation: next 1.2s infinite normal ease-out;
+  -webkit-animation: down 1.2s infinite normal ease-out;
+          animation: down 1.2s infinite normal ease-out;
   content: "";
   position: absolute;
   width: 0;
@@ -232,7 +232,7 @@ a:hover {
   left: calc(50vw - 20px);
 }
 
-@-webkit-keyframes next {
+@-webkit-keyframes down {
   0% {
     -webkit-transform: translateY(0px);
             transform: translateY(0px);
@@ -247,7 +247,7 @@ a:hover {
   }
 }
 
-@keyframes next {
+@keyframes down {
   0% {
     -webkit-transform: translateY(0px);
             transform: translateY(0px);
@@ -276,7 +276,9 @@ h1 span {
 
 .season {
   padding-top: 2rem;
-  height: calc(100vh - 100px);
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 
 .section--title--container {
@@ -293,9 +295,24 @@ h1 span {
 }
 
 .section--title--container i {
-  font-size: 2.5rem;
+  font-size: 1.5rem;
   -webkit-animation: next 1.2s infinite normal ease-out;
           animation: next 1.2s infinite normal ease-out;
+}
+
+@-webkit-keyframes next {
+  0% {
+    -webkit-transform: translatex(0px);
+            transform: translatex(0px);
+  }
+  50% {
+    -webkit-transform: translatex(10px);
+            transform: translatex(10px);
+  }
+  100% {
+    -webkit-transform: translatex(0px);
+            transform: translatex(0px);
+  }
 }
 
 @keyframes next {
@@ -321,6 +338,9 @@ h1 span {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
   margin-top: 0.5rem;
   overflow: scroll;
   overflow-x: auto;
@@ -347,7 +367,7 @@ h1 span {
 }
 
 .slide p {
-  margin: 0.5rem 0 2rem 0;
+  margin: 0.5rem 0;
   width: calc(100vw - 60px);
   text-indent: 25px;
 }
@@ -418,6 +438,9 @@ img {
     height: calc(100vh - 4rem);
     margin: 2rem 300px;
   }
+  .section--title--container i {
+    font-size: 1rem;
+  }
   .jap--title {
     height: 400px;
   }
@@ -439,7 +462,54 @@ img {
     font-size: 4rem;
   }
   .season {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
     padding-top: 4rem;
+  }
+  .section--title--container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0 30px;
+  }
+  .section--title--container i {
+    -webkit-animation: next 1.2s infinite normal ease-out;
+            animation: next 1.2s infinite normal ease-out;
+  }
+  @-webkit-keyframes next {
+    0% {
+      -webkit-transform: translatex(0px);
+              transform: translatex(0px);
+    }
+    50% {
+      -webkit-transform: translatex(10px);
+              transform: translatex(10px);
+    }
+    100% {
+      -webkit-transform: translatex(0px);
+              transform: translatex(0px);
+    }
+  }
+  @keyframes next {
+    0% {
+      -webkit-transform: translatex(0px);
+              transform: translatex(0px);
+    }
+    50% {
+      -webkit-transform: translatex(10px);
+              transform: translatex(10px);
+    }
+    100% {
+      -webkit-transform: translatex(0px);
+              transform: translatex(0px);
+    }
   }
   .inside--container {
     margin-top: 4rem;
@@ -490,10 +560,56 @@ img {
   }
   .season {
     height: calc(100vh - 80px);
-    padding-top: 1rem;
+    padding-top: 2rem;
   }
   .inside--container {
     margin-top: 1rem;
+  }
+  .section--title--container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: calc(100vw - 500px);
+    margin: 0 250px;
+  }
+  .section--title--container i {
+    font-size: 1.5rem;
+    -webkit-animation: next 1.2s infinite normal ease-out;
+            animation: next 1.2s infinite normal ease-out;
+  }
+  @-webkit-keyframes next {
+    0% {
+      -webkit-transform: translatex(0px);
+              transform: translatex(0px);
+    }
+    50% {
+      -webkit-transform: translatex(10px);
+              transform: translatex(10px);
+    }
+    100% {
+      -webkit-transform: translatex(0px);
+              transform: translatex(0px);
+    }
+  }
+  @keyframes next {
+    0% {
+      -webkit-transform: translatex(0px);
+              transform: translatex(0px);
+    }
+    50% {
+      -webkit-transform: translatex(10px);
+              transform: translatex(10px);
+    }
+    100% {
+      -webkit-transform: translatex(0px);
+              transform: translatex(0px);
+    }
   }
   .slide p {
     width: calc(100vw - 500px);
