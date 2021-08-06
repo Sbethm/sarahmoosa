@@ -225,15 +225,11 @@ i {
             object-position: 50% 80%;
         }        
     }
+
+    .project--link
     
     //1.4 SKILLS
-    .skills--container {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
+    
     .skill {
         display: flex;
         flex-direction: column;
