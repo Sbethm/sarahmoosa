@@ -159,14 +159,16 @@ section {
 }
 
 h2 {
-  margin-bottom: 20px;
-  font-family: "Patrick Hand", cursive;
+  margin-bottom: 40px;
+  font-family: "Montserrat", sans-serif;
   font-size: 2.5rem;
+  font-weight: 500;
   color: #000;
+  border-bottom: solid 1px #000;
 }
 
 p, span, a {
-  font-family: "Overpass", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 1.5rem;
   line-height: 2rem;
 }
@@ -259,7 +261,7 @@ header {
 }
 
 header h1 {
-  font-family: "Patrick Hand", cursive;
+  font-family: "Montserrat", sans-serif;
   font-size: 2.5rem;
   margin: 1.25rem;
   text-align: center;
@@ -280,7 +282,7 @@ header h1 .logo--title {
   margin: 20px;
   margin-top: calc(5rem + 40px);
   padding: 20px;
-  font-family: "Overpass", sans-serif;
+  font-family: "Roboto", sans-serif;
   top: 7.6rem;
   padding: 20px;
   background-color: #000;
@@ -716,7 +718,7 @@ footer {
     z-index: 9;
   }
   header h1 {
-    font-family: "Patrick Hand", cursive;
+    font-family: "Montserrat", sans-serif;
     font-size: 2.5rem;
     padding: 1.25rem 0;
   }
@@ -731,7 +733,7 @@ footer {
     color: #000;
     margin: 3rem 0;
     text-align: center;
-    font-family: "Overpass", sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 1.2rem;
   }
   ul li:hover {
