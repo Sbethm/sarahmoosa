@@ -219,7 +219,7 @@ i {
         margin: 10px auto;
         background-color: $accentColorHeader;
         overflow: hidden;
-        border: 4px solid $accentColorShadow;
+        border: 1px solid $accentColorShadow;
         border-radius: 5px;
 
         & p {
@@ -311,7 +311,7 @@ i {
         &:hover {
             font-size: 2.3rem;
             color: $accentColorTyping;
-            background-color: $bgColorScreen;
+            background-color: $accentColorS;
             @include transition-ease;
         }
     }
@@ -328,7 +328,7 @@ i {
         text-align: center;
 
         & span {
-            color: $accentColorTyping;
+            color: $accentColorContent;
             font-weight: 700;
             font-size: 1.8rem;
             font-style: italic;
@@ -655,16 +655,29 @@ i {
             width: 25vw; 
             height: 25em;
             margin: 10px auto;
+            background-color: $bgColorMain;
+            overflow: hidden;
+            border: 1px solid $accentColorShadow;
 
             & p {
+                display: flex;
                 width: 25vw;
+                height: 5em;
+                font-size: 1.5rem;
+                color: $accentColorContent;
+                text-align: center;
+                justify-content: center;
+                align-items: center;
             }
 
             & img {
                 width: 25vw;
+                height: 20em;
+                object-fit: cover;
+                object-position: 50% 80%;
             }        
-        }   
-
+        }
+        
         //3.4 SKILLS
         .skills--sect {
             margin: 50px 2.5rem 0 20rem;
