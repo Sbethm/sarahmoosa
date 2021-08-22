@@ -161,7 +161,7 @@ p {
   line-height: 2rem;
 }
 
-a {
+.home {
   width: 100vw;
   height: 100px;
   display: -webkit-box;
@@ -181,12 +181,12 @@ a {
   z-index: 9;
 }
 
-a i {
+.home i {
   color: #0c0c0c;
   font-size: 2rem;
 }
 
-a:hover {
+.home:hover {
   color: #fdfdfd;
   background-color: #a7dcf5;
   -webkit-transition: all 0.5s ease-in-out;
@@ -396,12 +396,16 @@ img {
   margin: 0 40px;
   -ms-flex-item-align: end;
       align-self: flex-end;
+  -webkit-animation: side 1.2s infinite normal ease-out;
+          animation: side 1.2s infinite normal ease-out;
 }
 
 .activity i {
   margin: 0 40px;
   -ms-flex-item-align: end;
       align-self: flex-end;
+  -webkit-animation: side 1.2s infinite normal ease-out;
+          animation: side 1.2s infinite normal ease-out;
 }
 
 .food i {
@@ -409,6 +413,36 @@ img {
   margin: 20px 40px;
   -ms-flex-item-align: end;
       align-self: flex-end;
+}
+
+@-webkit-keyframes side {
+  0% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+  50% {
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
+  }
+  100% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
+
+@keyframes side {
+  0% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+  50% {
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
+  }
+  100% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
 }
 
 .winter {
@@ -509,7 +543,7 @@ img {
 }
 
 @media only screen and (min-width: 1224px) {
-  a {
+  .home {
     width: 100vw;
     height: 80px;
     padding-left: 50px;
