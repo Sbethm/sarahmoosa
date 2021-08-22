@@ -291,14 +291,14 @@ i {
     .clickhere {
         font-size: 2rem;
         padding: 0.5rem;
-        border: 0.5px solid $accentColorContent;
+        border: 0.5px solid $accentColorLightBlue;
         border-radius: 5px;
-        color: $accentColorContent;
+        color: $accentColorLightBlue;
 
         &:hover {
             font-size: 2.3rem;
             color: $bgColorMain;
-            background-color: $accentColorContent;
+            background-color: $accentColorDeepBlue;
             @include transition-ease;
         }
     }
@@ -315,7 +315,7 @@ i {
         text-align: center;
 
         & span {
-            color: $accentColorContent;
+            color: $accentColorLightBlue;
             font-weight: 700;
             font-size: 1.8rem;
             font-style: italic;
@@ -597,7 +597,7 @@ i {
 
         //3.2 WELCOME
         .welcome {
-            height: 75vh;
+            height: 15rem;
             width: calc(100vw - 27.5rem);
             //width: calc(100vw - 30px - 20rem);
             margin-top: calc(50vh - 221px);
@@ -606,7 +606,6 @@ i {
 
             & p {
                 margin: 20px;
-                color: $accentColorHeader;
                 font-size: 2.3rem;
                 line-height: 2.8rem;
             } 

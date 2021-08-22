@@ -597,7 +597,7 @@ i {
 
         //3.2 WELCOME
         .welcome {
-            height: 75vh;
+            height: 20rem;
             width: calc(100vw - 27.5rem);
             //width: calc(100vw - 30px - 20rem);
             margin-top: calc(50vh - 221px);
@@ -606,7 +606,6 @@ i {
 
             & p {
                 margin: 20px;
-                color: $accentColorHeader;
                 font-size: 2.3rem;
                 line-height: 2.8rem;
             } 

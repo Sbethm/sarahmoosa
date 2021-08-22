@@ -162,7 +162,7 @@ h2 {
   margin-bottom: 20px;
   font-family: "Patrick Hand", cursive;
   font-size: 2.5rem;
-  color: #f0466b;
+  color: #000;
 }
 
 p, span, a {
@@ -178,14 +178,14 @@ a {
 i {
   margin: 10px;
   font-size: 5rem;
-  color: #13a4e7;
+  color: #000;
 }
 
 i:hover {
   font-size: 5.4rem;
   -webkit-transform: rotate(-20deg);
           transform: rotate(-20deg);
-  color: #0a0644;
+  color: #000;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
@@ -197,7 +197,7 @@ header {
   position: fixed;
   top: 0;
   background-color: #969393;
-  border-bottom: 0.5px solid #0a0644;
+  border-bottom: 0.5px solid #000;
   -webkit-box-shadow: 2px 2px 10px 1px #424242;
           box-shadow: 2px 2px 10px 1px #424242;
   overflow: hidden;
@@ -283,7 +283,7 @@ header h1 .logo--title {
   font-family: "Overpass", sans-serif;
   top: 7.6rem;
   padding: 20px;
-  background-color: #969393;
+  background-color: #000;
   -webkit-box-shadow: 2px 2px 10px 1px #424242;
           box-shadow: 2px 2px 10px 1px #424242;
 }
@@ -302,7 +302,7 @@ header h1 .logo--title {
 }
 
 .welcome span {
-  color: #13a4e7;
+  color: #000;
   font-weight: 700;
   font-size: 2.3rem;
   font-style: italic;
@@ -353,7 +353,7 @@ header h1 .logo--title {
   width: 74vw;
   height: 5em;
   font-size: 1.5rem;
-  color: #13a4e7;
+  color: #000;
   text-align: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -366,7 +366,7 @@ header h1 .logo--title {
 .project--box p:hover {
   font-size: 1.8rem;
   color: #969393;
-  background-color: #0a0644;
+  background-color: #000;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
@@ -418,7 +418,7 @@ header h1 .logo--title {
 
 .wannasee {
   padding-top: 20px;
-  color: #13a4e7;
+  color: #000;
   font-style: italic;
   text-align: center;
 }
@@ -431,15 +431,15 @@ header h1 .logo--title {
 .clickhere {
   font-size: 2rem;
   padding: 0.5rem;
-  border: 0.5px solid #13a4e7;
+  border: 0.5px solid #000;
   border-radius: 5px;
-  color: #13a4e7;
+  color: #000;
 }
 
 .clickhere:hover {
   font-size: 2.3rem;
   color: #969393;
-  background-color: #0a0644;
+  background-color: #000;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
@@ -461,7 +461,7 @@ header h1 .logo--title {
 }
 
 .contact--sect--p span {
-  color: #13a4e7;
+  color: #000;
   font-weight: 700;
   font-size: 1.8rem;
   font-style: italic;
@@ -660,7 +660,7 @@ footer {
         margin-bottom: 20px;
         font-family: $accentFont;
         font-size: 2.5rem;
-        color: $accentColorMaroon;
+        color: $accentColorContent;
     }
 
     p, span, a {
@@ -677,13 +677,13 @@ footer {
     i {
         margin: 10px;
         font-size: 5rem;
-        color: $accentColorLightBlue;
+        color: $accentColorContent;
 
         &:hover {
             //box-shadow: 2px 2px 10px 1px $accentColorShadow;
             font-size: 5.4rem;
             transform: rotate(-20deg);
-            color: $accentColorDeepBlue;
+            color: $accentColorContent;
         }
     } */
   header {
@@ -693,7 +693,7 @@ footer {
     position: fixed;
     left: 0;
     background-color: #969393;
-    border-bottom: 0.5px solid #0a0644;
+    border-bottom: 0.5px solid #000;
     -webkit-box-shadow: 2px 2px 10px 1px #424242;
             box-shadow: 2px 2px 10px 1px #424242;
     overflow: hidden;
@@ -727,6 +727,7 @@ footer {
     transition: all 0.5s ease-in-out;
   }
   .welcome {
+    height: 75vh;
     width: calc(100vw - 27.5rem);
     margin-top: calc(50vh - 221px);
     margin-bottom: calc(50vh - 190px);
@@ -737,7 +738,7 @@ footer {
             top: 7.6rem;
 
             & span {
-                color: $accentColorLightBlue;
+                color: $accentColorContent;
                 font-weight: 700;
                 font-size: 2.3rem;
                 font-style: italic;
@@ -747,6 +748,7 @@ footer {
   }
   .welcome p {
     margin: 20px;
+    color: #f1f1f1;
     font-size: 2.3rem;
     line-height: 2.8rem;
   }
@@ -782,7 +784,7 @@ footer {
     width: 25vw;
     height: 5em;
     font-size: 1.5rem;
-    color: #13a4e7;
+    color: #000;
     text-align: center;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -827,7 +829,7 @@ footer {
         
         .wannasee {
             padding-top: 20px;
-            color: $accentColorLightBlue;
+            color: $accentColorContent;
             font-style: italic;
             text-align: center;
         }
@@ -840,14 +842,14 @@ footer {
         .clickhere {
             font-size: 2rem;
             padding: 0.5rem;
-            border: 0.5px solid $accentColorLightBlue;
+            border: 0.5px solid $accentColorContent;
             border-radius: 5px;
-            color: $accentColorLightBlue;
+            color: $accentColorContent;
 
             &:hover {
                 font-size: 2.3rem;
-                color: $bgColorWhite;
-                background-color: $accentColorDeepBlue;
+                color: $bgColorMain;
+                background-color: $accentColorContent;
             }
         } */
   .contact--sect {
@@ -866,7 +868,7 @@ footer {
             width: 100vw;
             height: 5rem;
             position: absolute;
-            background-color: $bgColorWhite;
+            background-color: $bgColorMain;
             box-shadow: 2px 2px 10px 1px $accentColorShadow;
         }
         */
