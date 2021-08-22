@@ -580,7 +580,7 @@ i {
 
             & li {
                 color: #000;
-                margin: 3rem 0;
+                margin: 2.25rem 0;
                 text-align: center;
                 font-family: $contentFont;
                 font-size: 1.2rem;
@@ -588,7 +588,7 @@ i {
                 &:hover {
                     text-decoration: underline;
                     font-size: 2rem;
-                    color: #f1f1f1;
+                    color: $accentColorLightBlue;
                     cursor: pointer;
                     @include transition-ease;
                 }

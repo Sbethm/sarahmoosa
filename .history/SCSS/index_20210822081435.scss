@@ -588,7 +588,7 @@ i {
                 &:hover {
                     text-decoration: underline;
                     font-size: 2rem;
-                    color: #f1f1f1;
+                    color: $bg;
                     cursor: pointer;
                     @include transition-ease;
                 }
