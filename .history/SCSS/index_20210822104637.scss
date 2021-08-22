@@ -180,7 +180,7 @@ i {
         margin-top: calc(5rem + 40px);
         padding: 20px;
         font-family: $contentFont;
-        
+        text-align: center;
         top: 7.6rem;
         padding: 20px;
         background-color: $bgColorScreen;
@@ -367,7 +367,6 @@ i {
             margin: 60px;
             margin-top: calc(5rem + 40px);
             display: flex;
-            justify-content: center;
             align-items: center;
         }
 
@@ -429,6 +428,8 @@ i {
             width: calc(100vw - 160px);
             margin: 60px;
             margin-top: calc(5rem + 40px);
+            display: flex;
+            align-items: center;
         }
 
         //2.2.3 PROJECTS
@@ -540,6 +541,37 @@ i {
         /* padding: 20px; */
     }
 
+    /* h2 {
+        margin-bottom: 20px;
+        font-family: $accentFont;
+        font-size: 2.5rem;
+        color: $accentColorContent;
+    }
+
+    p, span, a {
+        font-family: $contentFont;
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+
+
+    a {
+        text-decoration: none;
+    }
+
+    i {
+        margin: 10px;
+        font-size: 5rem;
+        color: $accentColorContent;
+
+        &:hover {
+            //box-shadow: 2px 2px 10px 1px $accentColorShadow;
+            font-size: 5.4rem;
+            transform: rotate(-20deg);
+            color: $accentColorContent;
+        }
+    } */
+
         //3.1 HEADER
         header {
             height: 100vh;
@@ -598,8 +630,22 @@ i {
                 margin: 20px;
                 color: $accentColorHeader;
                 font-size: 2.3rem;
-                line-height: 4rem;
+                line-height: 2.8rem;
             } 
+            // margin: 25vh 30px 25vh ;
+            /*
+            font-family: $contentFont;
+            position: relative;
+            top: 7.6rem;
+
+            & span {
+                color: $accentColorContent;
+                font-weight: 700;
+                font-size: 2.3rem;
+                font-style: italic;
+            }
+
+            */
         }
 
         //3.3 PROJECTS

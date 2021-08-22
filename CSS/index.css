@@ -291,10 +291,28 @@ header h1 .logo--title {
 }
 
 .welcome span {
-  color: #000;
-  font-weight: 700;
+  color: #92f05d;
   font-size: 2.3rem;
-  font-style: italic;
+  -webkit-animation: blink 1s infinite;
+          animation: blink 1s infinite;
+}
+
+@-webkit-keyframes blink {
+  0% {
+    color: rgba(147, 240, 93, 0);
+  }
+  50% {
+    color: #92f05d;
+  }
+}
+
+@keyframes blink {
+  0% {
+    color: rgba(147, 240, 93, 0);
+  }
+  50% {
+    color: #92f05d;
+  }
 }
 
 .welcome p {
@@ -507,6 +525,9 @@ footer {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -565,12 +586,6 @@ footer {
     width: calc(100vw - 160px);
     margin: 60px;
     margin-top: calc(5rem + 40px);
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
   }
   .project--box {
     width: 24vw;
@@ -675,36 +690,6 @@ footer {
     width: calc(100vw - 27.5rem);
     /* padding: 20px; */
   }
-  /* h2 {
-        margin-bottom: 20px;
-        font-family: $accentFont;
-        font-size: 2.5rem;
-        color: $accentColorContent;
-    }
-
-    p, span, a {
-        font-family: $contentFont;
-        font-size: 1.5rem;
-        line-height: 2rem;
-    }
-
-
-    a {
-        text-decoration: none;
-    }
-
-    i {
-        margin: 10px;
-        font-size: 5rem;
-        color: $accentColorContent;
-
-        &:hover {
-            //box-shadow: 2px 2px 10px 1px $accentColorShadow;
-            font-size: 5.4rem;
-            transform: rotate(-20deg);
-            color: $accentColorContent;
-        }
-    } */
   header {
     height: 100vh;
     width: 15rem;
@@ -751,25 +736,12 @@ footer {
     margin-top: calc(50vh - 221px);
     margin-bottom: calc(50vh - 190px);
     margin-left: 20rem;
-    /*
-            font-family: $contentFont;
-            position: relative;
-            top: 7.6rem;
-
-            & span {
-                color: $accentColorContent;
-                font-weight: 700;
-                font-size: 2.3rem;
-                font-style: italic;
-            }
-
-            */
   }
   .welcome p {
     margin: 20px;
     color: #f1f1f1;
     font-size: 2.3rem;
-    line-height: 2.8rem;
+    line-height: 4rem;
   }
   .project--sect {
     margin: 40px 2.5rem 0 20rem;
