@@ -265,7 +265,7 @@ i {
         width: 100%;
         display: grid;
         grid-template-columns: 1fr 1fr;
-        justify-items: center;
+        justify-content: space-around;
         align-items: center;
         
         & .about--img {
@@ -274,6 +274,7 @@ i {
             width: 75%;
             overflow: hidden;
             border: solid 1px $accentColorContent;
+            
         }
         
         & img {

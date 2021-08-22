@@ -265,19 +265,17 @@ i {
         width: 100%;
         display: grid;
         grid-template-columns: 1fr 1fr;
-        justify-items: center;
-        align-items: center;
+        ju
         
         & .about--img {
-            grid-column: 1/2;
-            height: 18rem;
-            width: 75%;
+            height: 20rem;
+
             overflow: hidden;
-            border: solid 1px $accentColorContent;
         }
         
         & img {
-            width: 100%;
+            width: 75%;
+            grid-column: 1/2;
         }
 
         & .about--sect--p {

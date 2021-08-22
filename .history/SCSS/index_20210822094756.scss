@@ -265,12 +265,11 @@ i {
         width: 100%;
         display: grid;
         grid-template-columns: 1fr 1fr;
-        justify-items: center;
+        justify-content: center;
         align-items: center;
         
         & .about--img {
-            grid-column: 1/2;
-            height: 18rem;
+            height: 20rem;
             width: 75%;
             overflow: hidden;
             border: solid 1px $accentColorContent;
@@ -278,6 +277,7 @@ i {
         
         & img {
             width: 100%;
+            
         }
 
         & .about--sect--p {
