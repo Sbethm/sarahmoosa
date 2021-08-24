@@ -322,6 +322,23 @@ header h1 .logo--title {
   text-align: center;
 }
 
+#typing {
+  height: 50px;
+  color: #92f05d;
+  border-right: solid #92f05d 4px;
+  -webkit-animation: blink 1s infinite;
+          animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0% {
+    border-right: solid rgba(147, 240, 93, 0) 4px;
+  }
+  50% {
+    border-right: solid #92f05d 4px;
+  }
+}
+
 .project--sect {
   position: relative;
   height: -webkit-fit-content;
