@@ -193,7 +193,7 @@ i:hover {
 }
 
 header {
-  height: 5rem;
+  height: 6rem;
   width: 100vw;
   display: block;
   position: fixed;
@@ -263,7 +263,7 @@ header {
 header h1 {
   font-family: "Montserrat", sans-serif;
   font-size: 2.5rem;
-  margin: 1.25rem;
+  margin: 0.25rem;
   text-align: center;
 }
 
@@ -320,22 +320,22 @@ header h1 .logo--title {
   font-size: 2.3rem;
   line-height: 2.8rem;
   text-align: center;
+  color: #92f05d;
 }
 
-#typing {
+.cursor {
   height: 50px;
   color: #92f05d;
-  border-right: solid #92f05d 4px;
   -webkit-animation: blink 1s infinite;
           animation: blink 1s infinite;
 }
 
 @keyframes blink {
   0% {
-    border-right: solid rgba(147, 240, 93, 0) 4px;
+    color: rgba(147, 240, 93, 0);
   }
   50% {
-    border-right: solid #92f05d 4px;
+    color: #92f05d;
   }
 }
 

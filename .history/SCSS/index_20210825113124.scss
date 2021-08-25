@@ -221,7 +221,7 @@ i {
                 color: rgba(147, 240, 93, 0);
             }
             50%{
-                color: $accentColorTyping;
+                color: solid $accentColorTyping 4px;
             }
         }
     }

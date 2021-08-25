@@ -213,15 +213,15 @@ i {
     .cursor{
         height: 50px;
         color: $accentColorTyping;
-        // border-right: solid $accentColorTyping 4px;
+        border-right: solid $accentColorTyping 4px;
         animation: blink 1s infinite;
 
         @keyframes blink {
             0%{
-                color: rgba(147, 240, 93, 0);
+                border-right: solid rgba(147, 240, 93, 0) 4px;
             }
             50%{
-                color: $accentColorTyping;
+                bor: solid $accentColorTyping 4px;
             }
         }
     }

@@ -44,6 +44,9 @@ body {
       linear-gradient(to bottom, grey 1px, transparent 1px);
       background-attachment: fixed;
 }
+main {
+width: 100vw;
+}
 
 section {
     width: calc(100vw - 80px);
@@ -89,7 +92,7 @@ i {
 
     //1.1 HEADER
     header {
-        height: 6rem;
+        height: 5rem;
         width: 100vw;
         display: block;
         position: fixed;
@@ -103,7 +106,7 @@ i {
         & h1 {
             font-family: $accentFont; 
             font-size: $h1Size;  
-            margin: 0.25rem;
+            margin: 1.25rem;
             text-align: center;
             //border: solid 1px rgb(46, 45, 45);
 
@@ -176,11 +179,11 @@ i {
     //1.2 WELCOME
     .welcome {
         width: calc(100vw - 80px);
-        //height: 15rem;
         margin: 20px;
         margin-top: calc(5rem + 40px);
         padding: 20px;
         font-family: $contentFont;
+        
         top: 7.6rem;
         padding: 20px;
         background-color: $bgColorScreen;
@@ -206,22 +209,21 @@ i {
             font-size: 2.3rem;
             line-height: 2.8rem;
             text-align: center;
-            color: $accentColorTyping;
         }
     }
 
-    .cursor{
+    #typing{
         height: 50px;
         color: $accentColorTyping;
-        // border-right: solid $accentColorTyping 4px;
+        border-right: solid $accentColorTyping 4px;
         animation: blink 1s infinite;
 
         @keyframes blink {
             0%{
-                color: rgba(147, 240, 93, 0);
+                border-right: solid rgba(147, 240, 93, 0) 4px;
             }
             50%{
-                color: $accentColorTyping;
+                border-right: solid $accentColorTyping 4px;
             }
         }
     }

@@ -25,7 +25,7 @@ function type() {
     }
 
     
-    typing.innerHTML = `${wordsTyped.join('')}<span class="cursor">|</span>`;
+    typing.innerHTML = `${wordsTyped.join('')}<span class="cursor">|`;
 }
 
 type()

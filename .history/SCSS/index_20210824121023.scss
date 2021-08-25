@@ -176,7 +176,6 @@ i {
     //1.2 WELCOME
     .welcome {
         width: calc(100vw - 80px);
-        //height: 15rem;
         margin: 20px;
         margin-top: calc(5rem + 40px);
         padding: 20px;
@@ -206,22 +205,21 @@ i {
             font-size: 2.3rem;
             line-height: 2.8rem;
             text-align: center;
-            color: $accentColorTyping;
         }
     }
 
-    .cursor{
+    #typing{
         height: 50px;
         color: $accentColorTyping;
-        // border-right: solid $accentColorTyping 4px;
+        border-right: solid $accentColorTyping 4px;
         animation: blink 1s infinite;
 
         @keyframes blink {
             0%{
-                color: rgba(147, 240, 93, 0);
+                border-right: solid rgba(147, 240, 93, 0) 4px;
             }
             50%{
-                color: $accentColorTyping;
+                border-right: solid $accentColorTyping 4px;
             }
         }
     }

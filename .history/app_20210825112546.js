@@ -6,7 +6,7 @@ let j = 0;
 
 function type() {
     //const typeLetters2 = 'Designs that speak for you'; 
-    const typeWords = ['Clear, ', 'Functional, ', 'Beautiful ', 'Web Designs'];
+    const typeWords = ['Clear, ', 'Functional, ', 'Beautiful ', 'Web'];
     
 
     if(i <= typeWords.length){
@@ -25,7 +25,7 @@ function type() {
     }
 
     
-    typing.innerHTML = `${wordsTyped.join('')}<span class="cursor">|</span>`;
+    typing.innerHTML = `${wordsTyped.join('')}`;
 }
 
 type()
