@@ -1,2 +1,2 @@
-# sarahmoosa
-A portfolio that documents and displays my growth as a Web Developer.
+# movieFight
+ An application that allows users to compare movies easily and view which "won" in specific categories
