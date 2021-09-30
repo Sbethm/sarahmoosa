@@ -398,6 +398,11 @@ header h1 .logo--title {
      object-position: 50% 80%;
 }
 
+.moviefight img {
+  -o-object-position: left;
+     object-position: left;
+}
+
 .skills--container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -565,6 +570,10 @@ footer {
     -o-object-position: 50%;
        object-position: 50%;
   }
+  .moviefight img {
+    -o-object-position: left;
+       object-position: left;
+  }
   .skills--container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -656,6 +665,10 @@ footer {
   .project--box img {
     width: 100%;
     height: 100%;
+  }
+  .moviefight img {
+    -o-object-position: left;
+       object-position: left;
   }
   .skills--container {
     display: -webkit-box;
@@ -789,6 +802,10 @@ footer {
   .project--box img {
     width: 25vw;
   }
+  .moviefight img {
+    -o-object-position: left;
+       object-position: left;
+  }
   .skill {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -841,6 +858,10 @@ footer {
     height: 18rem;
     -o-object-position: 50%;
        object-position: 50%;
+  }
+  .moviefight img {
+    -o-object-position: left;
+       object-position: left;
   }
   .contact--sect {
     margin-bottom: 100px;
